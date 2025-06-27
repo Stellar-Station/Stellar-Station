@@ -21,6 +21,9 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip3 install --ignore-installed --user pillow jsonschema
+      - name: Copy RSI schema
+        run: |
+          cp .github/rsi-schema.json RobustToolbox/Schemas/rsi.json
       - name: Validate RSIs
         run: |
           python3 RobustToolbox/Schemas/validate_rsis.py Resources/
