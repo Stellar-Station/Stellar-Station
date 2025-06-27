@@ -586,12 +586,14 @@
   name: reinforced wall
   components:
   - type: Sprite
-    sprite: _ST/Tileset/Walls/metal_reinforced.rsi # Stellar edits begin
+    # Begin Stellar - Wallening
+    sprite: _ST/Tileset/Walls/metal_reinforced.rsi
     drawdepth: Mobs
   - type: SpriteFade
   - type: Icon
     sprite: _ST/Tileset/Walls/metal_reinforced.rsi
-    state: full # Stellar edits end
+    state: full
+    # End Stellar - Wallening
   - type: Construction
     graph: Girder
     node: reinforcedWall
@@ -621,7 +623,8 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-    key: wallsbase # Stellar edits begin
+    # Begin Stellar - Wallening
+    key: wallsbase
     base: tallreinfmetal
   - type: Appearance
   # - type: GenericVisualizer
@@ -634,7 +637,8 @@
   #         2: { state: reinf_construct-2, visible: true}
   #         3: { state: reinf_construct-3, visible: true}
   #         4: { state: reinf_construct-4, visible: true}
-  #         5: { state: reinf_construct-5, visible: true} # Stellar edits end
+  #         5: { state: reinf_construct-5, visible: true}
+  # End Stellar - Wallening
   - type: ReinforcedWallReplacementMarker
   - type: StaticPrice
     price: 250
@@ -980,9 +984,11 @@
   name: solid wall
   components:
   - type: Sprite
-    sprite: _ST/Tileset/Walls/metal.rsi # Stellar edits begin
+    # Begin Stellar - Wallening
+    sprite: _ST/Tileset/Walls/metal.rsi
     drawdepth: Mobs
-  - type: SpriteFade # Stellar edits end
+  - type: SpriteFade
+    # End Stellar - Wallening
   - type: WallReplacementMarker
   - type: Construction
     graph: Girder

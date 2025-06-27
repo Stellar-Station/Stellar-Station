@@ -16,7 +16,8 @@
     - type: CanBuildWindowOnTop
     - type: Sprite
       drawdepth: Walls
-      sprite: _ST/Tileset/Walls/grille.rsi # Stellar edits begin
+      # Begin Stellar - Wallening
+      sprite: _ST/Tileset/Walls/grille.rsi
       layers:
         - state: full
         - state: electrified
@@ -29,7 +30,8 @@
       key: grilles
     - type: Icon
       sprite: _ST/Tileset/Walls/grille.rsi
-      state: full # Stellar edits end
+      state: full
+      # End Stellar - Wallening
     - type: Construction
       graph: Grille
       node: grille
