@@ -1,30 +1,21 @@
-{
-  "version": 1,
-  "license": "CC-BY-NC-SA-3.0",
-  "copyright": "Taken from mojave-sun-13 at https://github.com/Mojave-Sun/mojave-sun-13/blob/fff561d5e2ae8af913a835327a849eebbe5ce3e0/mojave/icons/obstacles/tallobstacles.dmi",
-  "size": {
-    "x": 32,
-    "y": 54
-  },
-  "states": [
     {
-      "name": "bars",
+      "name": "bars_rust",
       "directions": 4
     },
     {
-      "name": "barsslot",
+      "name": "barsslot_rust",
       "directions": 4
     },
     {
-      "name": "barscorner",
+      "name": "barscorner_rust",
       "directions": 4
     },
     {
-      "name": "door",
+      "name": "door_rust",
       "directions": 4
     },
     {
-      "name": "dooropening",
+      "name": "door_rustopening",
       "directions": 4,
       "delays": [
         [
@@ -74,11 +65,11 @@
       ]
     },
     {
-      "name": "dooropen",
+      "name": "door_rustopen",
       "directions": 4
     },
     {
-      "name": "doorclosing",
+      "name": "door_rustclosing",
       "directions": 4,
       "delays": [
         [
@@ -126,6 +117,8 @@
           0.1
         ]
       ]
+    },
+    {
+      "name": "barricade",
+      "directions": 4
     }
-  ]
-}
