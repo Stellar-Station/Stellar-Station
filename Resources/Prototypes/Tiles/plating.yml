@@ -1,7 +1,7 @@
 ﻿- type: tile
   id: Plating
   name: tiles-plating
-  sprite: /Textures/Tiles/plating.png
+  sprite: /Textures/_ST/Tileset/Floors/Dark/dark_plate.png # Stellar
   baseTurf: Lattice
   isSubfloor: true
   footstepSounds:

@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 64
+    },
+    "license": "CUSTOM EULA",
+    "copyright": "By AftrLite",
+    "states": [
+        {
+            "name": "full"
+        },
+        {
+            "name": "tallreinfmetal0",
+            "directions": 4
+        },
+        {
+            "name": "tallreinfmetal1",
+            "directions": 4
+        },
+        {
+            "name": "tallreinfmetal2",
+            "directions": 4
+        },
+        {
+            "name": "tallreinfmetal3",
+            "directions": 4
+        },
+        {
+            "name": "tallreinfmetal4",
+            "directions": 4
+        },
+        {
+            "name": "tallreinfmetal5",
+            "directions": 4
+        },
+        {
+            "name": "tallreinfmetal6",
+            "directions": 4
+        },
+        {
+            "name": "tallreinfmetal7",
+            "directions": 4
+        }
+    ]
+}

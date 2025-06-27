@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CUSTOM EULA",
+    "copyright": "By AftrLite",
+    "states": [
+        {
+            "name": "full"
+        },
+        {
+            "name": "frame0",
+            "directions": 4
+        },
+        {
+            "name": "frame1",
+            "directions": 4
+        },
+        {
+            "name": "frame2",
+            "directions": 4
+        },
+        {
+            "name": "frame3",
+            "directions": 4
+        },
+        {
+            "name": "frame4",
+            "directions": 4
+        },
+        {
+            "name": "frame5",
+            "directions": 4
+        },
+        {
+            "name": "frame6",
+            "directions": 4
+        },
+        {
+            "name": "frame7",
+            "directions": 4
+        }
+    ]
+}
