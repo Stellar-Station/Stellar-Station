@@ -10,5 +10,6 @@ namespace Content.Shared.Eye
         Normal = 1 << 0,
         Ghost  = 1 << 1,
         Subfloor = 1 << 2,
+        CosmicCultMonument = 1 << 10, // Stellar - Cosmic Cult
     }
 }

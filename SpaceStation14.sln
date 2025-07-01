@@ -135,6 +135,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Roslyn", "Roslyn", "{7844DA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robust.Xaml", "RobustToolbox\Robust.Xaml\Robust.Xaml.csproj", "{5C05B9B4-6AFE-4884-AA6A-5A26C0FFF2F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.Stellar.Shared", "Content.Stellar.Shared\Content.Stellar.Shared.csproj", "{1C8A1F9A-B2E7-4C34-87CC-175FDC882B7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.Stellar.Client", "Content.Stellar.Client\Content.Stellar.Client.csproj", "{79291DF9-87B3-4478-A462-03DC8FA406F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.Stellar.Server", "Content.Stellar.Server\Content.Stellar.Server.csproj", "{BB86B6F3-AE07-477E-9017-1AE353F74193}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -454,6 +460,30 @@ Global
 		{5C05B9B4-6AFE-4884-AA6A-5A26C0FFF2F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C05B9B4-6AFE-4884-AA6A-5A26C0FFF2F6}.Tools|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C05B9B4-6AFE-4884-AA6A-5A26C0FFF2F6}.Tools|Any CPU.Build.0 = Debug|Any CPU
+		{1C8A1F9A-B2E7-4C34-87CC-175FDC882B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8A1F9A-B2E7-4C34-87CC-175FDC882B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8A1F9A-B2E7-4C34-87CC-175FDC882B7B}.DebugOpt|Any CPU.ActiveCfg = DebugOpt|Any CPU
+		{1C8A1F9A-B2E7-4C34-87CC-175FDC882B7B}.DebugOpt|Any CPU.Build.0 = DebugOpt|Any CPU
+		{1C8A1F9A-B2E7-4C34-87CC-175FDC882B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8A1F9A-B2E7-4C34-87CC-175FDC882B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8A1F9A-B2E7-4C34-87CC-175FDC882B7B}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{1C8A1F9A-B2E7-4C34-87CC-175FDC882B7B}.Tools|Any CPU.Build.0 = Tools|Any CPU
+		{79291DF9-87B3-4478-A462-03DC8FA406F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79291DF9-87B3-4478-A462-03DC8FA406F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79291DF9-87B3-4478-A462-03DC8FA406F5}.DebugOpt|Any CPU.ActiveCfg = DebugOpt|Any CPU
+		{79291DF9-87B3-4478-A462-03DC8FA406F5}.DebugOpt|Any CPU.Build.0 = DebugOpt|Any CPU
+		{79291DF9-87B3-4478-A462-03DC8FA406F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79291DF9-87B3-4478-A462-03DC8FA406F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79291DF9-87B3-4478-A462-03DC8FA406F5}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{79291DF9-87B3-4478-A462-03DC8FA406F5}.Tools|Any CPU.Build.0 = Tools|Any CPU
+		{BB86B6F3-AE07-477E-9017-1AE353F74193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB86B6F3-AE07-477E-9017-1AE353F74193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB86B6F3-AE07-477E-9017-1AE353F74193}.DebugOpt|Any CPU.ActiveCfg = DebugOpt|Any CPU
+		{BB86B6F3-AE07-477E-9017-1AE353F74193}.DebugOpt|Any CPU.Build.0 = DebugOpt|Any CPU
+		{BB86B6F3-AE07-477E-9017-1AE353F74193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB86B6F3-AE07-477E-9017-1AE353F74193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB86B6F3-AE07-477E-9017-1AE353F74193}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{BB86B6F3-AE07-477E-9017-1AE353F74193}.Tools|Any CPU.Build.0 = Tools|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

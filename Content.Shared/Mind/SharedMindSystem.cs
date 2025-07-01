@@ -436,6 +436,21 @@ public abstract partial class SharedMindSystem : EntitySystem
         return false;
     }
 
+    // Begin Stellar - Cosmic Cult Deconversion
+    public void ClearObjectives(Entity<MindComponent?> mind)
+    {
+        if (!Resolve(mind, ref mind.Comp))
+            return;
+
+        foreach (var obj in mind.Comp.Objectives)
+        {
+            QueueDel(obj);
+        }
+        mind.Comp.Objectives.Clear();
+        Dirty(mind);
+    }
+    // End Stellar - Cosmic Cult Deconversion
+
     /// <summary>
     /// Copies objectives from one mind to another, so that they are shared between two players.
     /// </summary>

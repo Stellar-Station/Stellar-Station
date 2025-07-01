@@ -219,6 +219,10 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
             };
             _deviceNetworkSystem.QueuePacket(uid, null, payload, netComp.TransmitFrequency);
         }
+        // Begin Stellar - Evac Shuttle Left Event
+        var evt = new Content.Server._ST.Shuttles.EvacShuttleLeftEvent();
+        RaiseLocalEvent(ref evt);
+        // End Stellar - Evac Shuttle Left Event
     }
 
     /// <summary>
