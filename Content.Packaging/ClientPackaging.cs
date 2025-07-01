@@ -34,6 +34,23 @@ public static class ClientPackaging
                     "/m"
                 }
             });
+            // Begin Stellar - assemblies
+            await ProcessHelpers.RunCheck(new ProcessStartInfo
+            {
+                FileName = "dotnet",
+                ArgumentList =
+                {
+                    "build",
+                    Path.Combine("Content.Stellar.Client", "Content.Stellar.Client.csproj"),
+                    "-c", configuration,
+                    "--nologo",
+                    "/v:m",
+                    "/t:Rebuild",
+                    "/p:FullRelease=true",
+                    "/m"
+                }
+            });
+            // End Stellar - assemblies
         }
 
         logger.Info("Packaging client...");
@@ -75,7 +92,7 @@ public static class ClientPackaging
             inputPass,
             contentDir,
             "Content.Client",
-            new[] { "Content.Client", "Content.Shared", "Content.Shared.Database" },
+            new[] { "Content.Client", "Content.Stellar.Client", "Content.Shared", "Content.Stellar.Shared", "Content.Shared.Database" }, // Stellar - assemblies
             cancel: cancel);
 
         await RobustClientPackaging.WriteClientResources(contentDir, inputPass, cancel);
