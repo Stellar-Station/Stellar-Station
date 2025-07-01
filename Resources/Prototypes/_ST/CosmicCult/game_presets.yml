@@ -5,7 +5,6 @@
   name: cosmiccult-title
   description: cosmiccult-description
   showInVote: false
-  cooldown: 1
   rules:
     - CosmicCult
     - SubGamemodesRule
@@ -13,7 +12,6 @@
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
     - BasicStationEventScheduler
-    - GlimmerEventScheduler
 
 - type: gamePreset #Runs Cosmic Cult but shows "Secret" in lobby.
   id: SecretCosmicCult
@@ -29,4 +27,3 @@
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
     - BasicStationEventScheduler
-    - GlimmerEventScheduler

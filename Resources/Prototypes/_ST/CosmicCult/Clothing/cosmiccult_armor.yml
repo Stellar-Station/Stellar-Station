@@ -39,7 +39,6 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
-    - HidesHarpyWings
 #Shoulder mounted flashlight
   - type: ToggleableLightVisuals
     spriteLayer: light
