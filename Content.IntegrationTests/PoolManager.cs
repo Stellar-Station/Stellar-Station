@@ -134,7 +134,9 @@ public static partial class PoolManager
             ContentAssemblies = new[]
             {
                 typeof(Shared.Entry.EntryPoint).Assembly,
+                typeof(Stellar.Shared.Entry.EntryPoint).Assembly, // Stellar - assemblies
                 typeof(Client.Entry.EntryPoint).Assembly,
+                typeof(Stellar.Client.Entry.EntryPoint).Assembly, // Stellar - assemblies
                 typeof(PoolManager).Assembly,
             }
         };
@@ -436,7 +438,9 @@ we are just going to end this here to save a lot of time. This is the exception 
         _contentAssemblies =
         [
             typeof(Shared.Entry.EntryPoint).Assembly,
+            typeof(Stellar.Shared.Entry.EntryPoint).Assembly, // Stellar - assemblies
             typeof(Server.Entry.EntryPoint).Assembly,
+            typeof(Stellar.Server.Entry.EntryPoint).Assembly, // Stellar - assemblies
             typeof(PoolManager).Assembly
         ];
         _contentAssemblies.UnionWith(extraAssemblies);
