@@ -27,7 +27,9 @@ public sealed class SandboxTest
             ContentAssemblies = new[]
             {
                 typeof(Shared.Entry.EntryPoint).Assembly,
-                typeof(Client.Entry.EntryPoint).Assembly
+                typeof(Client.Entry.EntryPoint).Assembly,
+                typeof(Stellar.Shared.Entry.EntryPoint).Assembly, // Stellar - assemblies
+                typeof(Stellar.Client.Entry.EntryPoint).Assembly // Stellar - assemblies
             },
             Options = new GameControllerOptions { LoadConfigAndUserData = false }
         };
@@ -49,6 +51,7 @@ public sealed class SandboxTest
         using var client = new RobustIntegrationTest.ClientIntegrationInstance(options);
         await client.WaitIdleAsync();
         await client.CheckSandboxed(typeof(Client.Entry.EntryPoint).Assembly);
+        await client.CheckSandboxed(typeof(Stellar.Client.Entry.EntryPoint).Assembly); // Stellar - assemblies
         await client.CheckSandboxed(typeof(Shared.IoC.SharedContentIoC).Assembly);
     }
 }
