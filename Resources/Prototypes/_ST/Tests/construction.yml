@@ -108,7 +108,7 @@
               doAfter: 1
           completed:
             - !type:SpawnPrototype
-              prototype: ReinforcedPlasmaGlass
+              prototype: SheetRPGlass1
               amount: 1
 
     - node: StellarWindowUranium
