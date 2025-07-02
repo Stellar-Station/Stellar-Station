@@ -162,7 +162,7 @@
     group: Standard
     department: Civilian
   - type: StaticPrice
-    price: 150
+    price: 200 # Stellar - our station so stellar that airlocks are worth more
   - type: LightningTarget
     priority: 1
   - type: Tag
