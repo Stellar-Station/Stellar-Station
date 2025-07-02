@@ -33,6 +33,8 @@
     trackAllDamage: true
     damageOverlay:
       sprite: _ST/Tileset/Windows/cracks.rsi
+  - type: StaticPrice
+    price: 150
   - type: Destructible
     thresholds:
     - trigger:
