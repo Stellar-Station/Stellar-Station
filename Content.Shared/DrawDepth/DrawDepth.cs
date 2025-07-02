@@ -56,13 +56,15 @@ namespace Content.Shared.DrawDepth
         /// </summary>
         SmallMobs = DrawDepthTag.Default - 3,
 
-        Walls = DrawDepthTag.Default - 2,
+        // Begin Stellar - These go over mobs
+        // Walls = DrawDepthTag.Default - 2,
 
-        /// <summary>
-        ///     Used for windows (grilles use walls) and misc signage. Useful if you want to have an APC in the middle
-        ///     of some wall-art or something.
-        /// </summary>
-        WallTops = DrawDepthTag.Default - 1,
+        // /// <summary>
+        // ///     Used for windows (grilles use walls) and misc signage. Useful if you want to have an APC in the middle
+        // ///     of some wall-art or something.
+        // /// </summary>
+        // WallTops = DrawDepthTag.Default - 1,
+        // End Stellar - These go over mobs
 
         /// <summary>
         ///     Furniture, crates, tables. etc. If an entity should be drawn on top of a table, it needs a draw depth
@@ -107,22 +109,32 @@ namespace Content.Shared.DrawDepth
         /// </summary>
         BlastDoors = DrawDepthTag.Default + 9,
 
+        // Begin Stellar - These go over mobs
+        Walls = DrawDepthTag.Default + 10,
+
+        /// <summary>
+        ///     Used for windows (grilles use walls) and misc signage. Useful if you want to have an APC in the middle
+        ///     of some wall-art or something.
+        /// </summary>
+        WallTops = DrawDepthTag.Default + 11,
+        // End Stellar - These go over mobs
+
         /// <summary>
         /// Stuff that needs to draw over most things, but not effects, like Kudzu.
         /// </summary>
-        Overdoors = DrawDepthTag.Default + 10,
+        Overdoors = DrawDepthTag.Default + 12, // Stellar - Reorder
 
         /// <summary>
         ///     Explosions, fire, melee swings. Whatever.
         /// </summary>
-        Effects = DrawDepthTag.Default + 11,
+        Effects = DrawDepthTag.Default + 13, // Stellar - Reorder
 
-        Ghosts = DrawDepthTag.Default + 12,
+        Ghosts = DrawDepthTag.Default + 14, // Stellar - Reorder
 
         /// <summary>
         ///    Use this selectively if it absolutely needs to be drawn above (almost) everything else. Examples include
         ///    the pointing arrow, the drag & drop ghost-entity, and some debug tools.
         /// </summary>
-        Overlays = DrawDepthTag.Default + 13,
+        Overlays = DrawDepthTag.Default + 15, // Stellar - Reorder
     }
 }

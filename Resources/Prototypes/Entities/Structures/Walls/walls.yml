@@ -588,7 +588,6 @@
   - type: Sprite
     # Begin Stellar - Wallening
     sprite: _ST/Tileset/Walls/metal_reinforced.rsi
-    drawdepth: Mobs
   - type: SpriteFade
   - type: Icon
     sprite: _ST/Tileset/Walls/metal_reinforced.rsi
@@ -986,7 +985,6 @@
   - type: Sprite
     # Begin Stellar - Wallening
     sprite: _ST/Tileset/Walls/metal.rsi
-    drawdepth: Mobs
   - type: SpriteFade
     # End Stellar - Wallening
   - type: WallReplacementMarker
