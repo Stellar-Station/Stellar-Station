@@ -108,7 +108,7 @@
         pickup: true
         emptyAtUser: true
       - !type:SpawnPrototype
-        prototype: SheetRGlass1
+        prototype: SheetUGlass1
         amount: 1
       steps:
       - tool: Prying
