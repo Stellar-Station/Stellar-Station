@@ -110,13 +110,13 @@ namespace Content.Shared.DrawDepth
         BlastDoors = DrawDepthTag.Default + 9,
 
         // Begin Stellar - These go over mobs
-        Walls = DrawDepthTag.Default + 10,
+        Walls = DrawDepthTag.Default + 6,
 
         /// <summary>
         ///     Used for windows (grilles use walls) and misc signage. Useful if you want to have an APC in the middle
         ///     of some wall-art or something.
         /// </summary>
-        WallTops = DrawDepthTag.Default + 11,
+        WallTops = DrawDepthTag.Default + 6,
         // End Stellar - These go over mobs
 
         /// <summary>
