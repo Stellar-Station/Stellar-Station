@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "license": "LicenseRef-Wallening",
+  "copyright": "By AftrLite",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "base0",
+      "directions": 4
+    },
+    {
+      "name": "base1",
+      "directions": 4
+    },
+    {
+      "name": "base2",
+      "directions": 4
+    },
+    {
+      "name": "base3",
+      "directions": 4
+    },
+    {
+      "name": "base4",
+      "directions": 4
+    },
+    {
+      "name": "base5",
+      "directions": 4
+    },
+    {
+      "name": "base6",
+      "directions": 4
+    },
+    {
+      "name": "base7",
+      "directions": 4
+    },
+    {
+      "name": "base8",
+      "directions": 4
+    },
+    {
+      "name": "base9",
+      "directions": 4
+    },
+    {
+      "name": "base10",
+      "directions": 4
+    },
+    {
+      "name": "base11",
+      "directions": 4
+    },
+    {
+      "name": "base12",
+      "directions": 4
+    },
+    {
+      "name": "base13",
+      "directions": 4
+    },
+    {
+      "name": "base14",
+      "directions": 4
+    },
+    {
+      "name": "base15",
+      "directions": 4
+    },
+    {
+      "name": "book-0",
+      "directions": 4
+    },
+    {
+      "name": "book-1",
+      "directions": 4
+    },
+    {
+      "name": "book-2",
+      "directions": 4
+    },
+    {
+      "name": "book-3",
+      "directions": 4
+    },
+    {
+      "name": "book-4",
+      "directions": 4
+    },
+    {
+      "name": "book-5",
+      "directions": 4
+    },
+    {
+      "name": "book-6",
+      "directions": 4
+    },
+    {
+      "name": "book-7",
+      "directions": 4
+    },
+    {
+      "name": "book-8",
+      "directions": 4
+    },
+    {
+      "name": "book-9",
+      "directions": 4
+    },
+    {
+      "name": "book-10",
+      "directions": 4
+    },
+    {
+      "name": "book-11",
+      "directions": 4
+    },
+    {
+      "name": "book-12",
+      "directions": 4
+    },
+    {
+      "name": "book-13",
+      "directions": 4
+    },
+    {
+      "name": "book-14",
+      "directions": 4
+    },
+    {
+      "name": "book-15",
+      "directions": 4
+    },
+    {
+      "name": "book-16",
+      "directions": 4
+    },
+    {
+      "name": "book-17",
+      "directions": 4
+    },
+    {
+      "name": "book-18",
+      "directions": 4
+    },
+    {
+      "name": "book-19",
+      "directions": 4
+    },
+    {
+      "name": "book-20",
+      "directions": 4
+    }
+  ]
+}

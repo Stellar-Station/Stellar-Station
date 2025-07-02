@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 64
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/tgstation/tgstation at commit 0f957e47d51d601156b4e716c59e0374895c192d",
+  "states": [
+    {"name": "DamageOverlay_5", "directions": 1},
+    {"name": "DamageOverlay_10", "directions": 1},
+    {"name": "DamageOverlay_20", "directions": 1}
+  ]
+}

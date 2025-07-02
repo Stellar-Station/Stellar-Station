@@ -1,0 +1,108 @@
+##################### REGULAR GLASS
+- type: tile
+  id: StellarFloorGlassUraniumBase
+  name: st-floor-glass-uranium-base
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Uranium/uraniumglass_base.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassUraniumDouble1
+  name: st-floor-glass-uranium-double1
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Uranium/uraniumglass_double_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassUraniumDouble2
+  name: st-floor-glass-uranium-double2
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Uranium/uraniumglass_double_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassUraniumMono
+  name: st-floor-glass-uranium-mono
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Uranium/uraniumglass_mono.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassUraniumMulti1
+  name: st-floor-glass-uranium-multi1
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Uranium/uraniumglass_multi_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassUraniumMulti2
+  name: st-floor-glass-uranium-multi2
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Uranium/uraniumglass_multi_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassUraniumFramedDouble1
+  name: st-floor-glass-uranium-framed-double1
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Uranium/uraniumglass_framed_double_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassUraniumFramedDouble2
+  name: st-floor-glass-uranium-framed-double2
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Uranium/uraniumglass_framed_double_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassUraniumFramedMono
+  name: st-floor-glass-uranium-framed-mono
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Uranium/uraniumglass_framed_mono.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000

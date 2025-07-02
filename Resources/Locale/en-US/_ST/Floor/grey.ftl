@@ -1,0 +1,34 @@
+
+st-floor-grey-base = grey tile
+st-floor-grey-corner-ne = grey corner tile NE
+st-floor-grey-corner-nw =  grey corner tile NW
+st-floor-grey-corner-se = grey corner tile SE
+st-floor-grey-corner-sw = grey corner tile SW
+st-floor-grey-double1 = grey double tile
+st-floor-grey-double2 = grey double tile horizontal
+st-floor-grey-mini = grey mini tile
+st-floor-grey-mini-brick1 = grey brick tile
+st-floor-grey-mini-brick2 = grey brick tile horizontal
+st-floor-grey-herringbone = grey herringbone tile
+st-floor-grey-mono = grey mono tile
+st-floor-grey-plating = grey plating tile
+st-floor-grey-processor = grey processor tile
+st-floor-grey-techy = grey techy tile
+st-floor-grey-vented = grey vented tile
+st-floor-grey-wide-n = grey wide tile N
+st-floor-grey-wide-s = grey wide tile S
+st-floor-grey-wide-w = grey wide tile W
+st-floor-grey-wide-e = grey wide tile E
+
+st-floor-grey-dotted-base = dotted grey tile
+st-floor-grey-dotted-corner-ne = dotted grey corner tile NE
+st-floor-grey-dotted-corner-nw = dotted grey corner tile NW
+st-floor-grey-dotted-corner-se = dotted grey corner tile SE
+st-floor-grey-dotted-corner-sw = dotted grey corner tile SW
+st-floor-grey-dotted-double1 = dotted grey double tile
+st-floor-grey-dotted-double2 = dotted grey double tile horizontal
+st-floor-grey-dotted-mono = dotted grey mono tile
+st-floor-grey-dotted-wide-n = dotted grey wide tile N
+st-floor-grey-dotted-wide-s = dotted grey wide tile S
+st-floor-grey-dotted-wide-w = dotted grey wide tile W
+st-floor-grey-dotted-wide-e = dotted grey wide tile E

@@ -5,13 +5,24 @@
   description: Mostly filled with books.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/bookshelf.rsi
-    snapCardinals: true
+    offset: 0, 0.3 # Begin Stellar - Wallening
+    drawdepth: Mobs
+    sprite: _ST/Tileset/Decor/Misc/bookshelf.rsi
     layers:
-      - state: base
-      - state: book-0
+      - map: ["enum.StorageVisualLayers.Base"]
+        state: base0
       - map: ["enum.StorageFillLayers.Fill"]
+        sprite: _ST/Tileset/Decor/Misc/bookshelf.rsi
+        state: book-0
+  - type: SpriteFade
   - type: Appearance
+  - type: Icon
+    sprite: _ST/Tileset/Decor/Misc/bookshelf.rsi
+    state: full
+  - type: IconSmooth
+    key: StellarBookshelf
+    base: base
+    mode: CardinalFlags # End Stellar - Wallening
   - type: StorageFillVisualizer
     maxFillLevels: 21
     fillBaseName: book
@@ -54,7 +65,7 @@
     bodyType: Static
   - type: Anchorable
   - type: Pullable
-  - type: Occluder
+  # - type: Occluder # Stellar - Wallening ## Dark libraries my beloathed
   - type: Storage
     grid:
     - 0,0,9,3

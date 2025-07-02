@@ -4,16 +4,10 @@
   parent: Window
   components:
   - type: Sprite
-  # Begin Stellar - Wallening
-    drawdepth: Mobs
-    sprite: _ST/Tileset/Walls/window_base_reinforced.rsi
+    drawdepth: WallTops
+    sprite: Structures/Windows/reinforced_window.rsi
   - type: Icon
-    sprite: _ST/Tileset/Walls/window_base_reinforced.rsi
-    state: full
-  - type: PlacementReplacement
-    key: windows
-  - type: SpriteFade
-  # End Stellar - Wallening
+    sprite: Structures/Windows/reinforced_window.rsi
   - type: Repairable
     fuelCost: 10
     doAfterDelay: 2
@@ -50,7 +44,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    base: window
+    base: rwindow
   - type: Construction
     graph: Window
     node: reinforcedWindow

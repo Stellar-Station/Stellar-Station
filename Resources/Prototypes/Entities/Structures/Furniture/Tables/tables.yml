@@ -6,9 +6,9 @@
   description: Pieces of metal that make the frame of a table.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/frame.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_frame.rsi # Stellar - Wallening
   - type: Icon
-    sprite: Structures/Furniture/Tables/frame.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_frame.rsi # Stellar - Wallening
     state: full
   - type: Fixtures
     fixtures:
@@ -26,7 +26,7 @@
     damageModifierSet: Metallic
   - type: IconSmooth
     key: state
-    base: state_
+    base: table # Stellar - Wallening
   - type: Destructible
     thresholds:
     - trigger:
@@ -117,16 +117,16 @@
   description: Pieces of metal that make the frame of a table.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/frame.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_kitchen.rsi # Stellar - Wallening
   - type: Icon
-    sprite: Structures/Furniture/Tables/frame.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_kitchen.rsi # Stellar - Wallening
     state: full
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
   - type: IconSmooth
     key: state
-    base: state_
+    base: table # Stellar - Wallening
   - type: Destructible
     thresholds:
     - trigger:
@@ -162,9 +162,9 @@
   description: A square piece of metal standing on four metal legs.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/generic.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_base.rsi # Stellar - Wallening
   - type: Icon
-    sprite: Structures/Furniture/Tables/generic.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_base.rsi # Stellar - Wallening
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
@@ -194,7 +194,7 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: metaltable
-    base: state_
+    base: table # Stellar - Wallening
   - type: Construction
     graph: Table
     node: Table
@@ -206,9 +206,9 @@
   description: A square piece of metal standing on four metal legs. Extra robust.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/reinforced.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_reinf.rsi # Stellar - Wallening
   - type: Icon
-    sprite: Structures/Furniture/Tables/reinforced.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_reinf.rsi # Stellar - Wallening
   - type: Destructible
     thresholds:
     - trigger:
@@ -235,6 +235,7 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: metalreinforcedtable
+    base: table # Stellar - Wallening
   - type: Construction
     graph: Table
     node: TableReinforced
@@ -253,9 +254,9 @@
   description: A square piece of glass, standing on four metal legs.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/glass.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_glass.rsi # Stellar - Wallening
   - type: Icon
-    sprite: Structures/Furniture/Tables/glass.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_glass.rsi # Stellar - Wallening
   - type: GlassTable
     climberDamage:
       types:
@@ -293,6 +294,7 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: glasstable
+    base: table # Stellar - Wallening
   - type: Construction
     graph: Table
     node: TableGlass
@@ -364,9 +366,9 @@
   description: A square piece of plasma glass, standing on four metal legs. Pretty!
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/plasma.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_plasma.rsi # Stellar - Wallening
   - type: Icon
-    sprite: Structures/Furniture/Tables/plasma.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_plasma.rsi # Stellar - Wallening
   - type: GlassTable
     climberDamage:
       types:
@@ -407,6 +409,7 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: plasmaglasstable
+    base: table # Stellar - Wallening
   - type: Construction
     graph: Table
     node: TablePlasmaGlass
@@ -464,9 +467,9 @@
   description: Do not apply fire to this. Rumour says it burns easily.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/wood.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_wood.rsi # Stellar - Wallening
   - type: Icon
-    sprite: Structures/Furniture/Tables/wood.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_wood.rsi # Stellar - Wallening
   - type: Damageable
     damageModifierSet: Wood
   - type: Destructible
@@ -496,6 +499,7 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: woodtable
+    base: table # Stellar - Wallening
   - type: Construction
     graph: Table
     node: TableWood

@@ -1,0 +1,34 @@
+
+st-floor-dark-base = dark tile
+st-floor-dark-corner-ne = dark corner tile NE
+st-floor-dark-corner-nw =  dark corner tile NW
+st-floor-dark-corner-se = dark corner tile SE
+st-floor-dark-corner-sw = dark corner tile SW
+st-floor-dark-double1 = dark double tile
+st-floor-dark-double2 = dark double tile horizontal
+st-floor-dark-mini = dark mini tile
+st-floor-dark-mini-brick1 = dark brick tile
+st-floor-dark-mini-brick2 = dark brick tile horizontal
+st-floor-dark-herringbone = dark herringbone tile
+st-floor-dark-mono = dark mono tile
+st-floor-dark-plating = dark plating tile
+st-floor-dark-processor = dark processor tile
+st-floor-dark-techy = dark techy tile
+st-floor-dark-vented = dark vented tile
+st-floor-dark-wide-n = dark wide tile N
+st-floor-dark-wide-s = dark wide tile S
+st-floor-dark-wide-w = dark wide tile W
+st-floor-dark-wide-e = dark wide tile E
+
+st-floor-dark-dotted-base = dotted dark tile
+st-floor-dark-dotted-corner-ne = dotted dark corner tile NE
+st-floor-dark-dotted-corner-nw = dotted dark corner tile NW
+st-floor-dark-dotted-corner-se = dotted dark corner tile SE
+st-floor-dark-dotted-corner-sw = dotted dark corner tile SW
+st-floor-dark-dotted-double1 = dotted dark double tile
+st-floor-dark-dotted-double2 = dotted dark double tile horizontal
+st-floor-dark-dotted-mono = dotted dark mono tile
+st-floor-dark-dotted-wide-n = dotted dark wide tile N
+st-floor-dark-dotted-wide-s = dotted dark wide tile S
+st-floor-dark-dotted-wide-w = dotted dark wide tile W
+st-floor-dark-dotted-wide-e = dotted dark wide tile E

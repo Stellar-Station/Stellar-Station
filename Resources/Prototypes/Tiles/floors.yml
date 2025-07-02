@@ -1,7 +1,7 @@
 - type: tile
   id: FloorSteel
   name: tiles-steel-floor
-  sprite: /Textures/_ST/Tileset/Floors/Grey/grey_base.png # Stellar
+  sprite: /Textures/Tiles/steel.png
   variants: 4
   placementVariants:
   - 1.0
@@ -19,7 +19,7 @@
 - type: tile
   id: FloorSteelCheckerLight
   name: tiles-steel-floor-checker-light
-  sprite: /Textures/_ST/Tileset/Floors/Misc/checker_base.png # Stellar
+  sprite: /Textures/Tiles/cafeteria.png
   variants: 4
   placementVariants:
   - 1.0
@@ -37,7 +37,7 @@
 - type: tile
   id: FloorSteelCheckerDark
   name: tiles-steel-floor-checker-dark
-  sprite: /Textures/_ST/Tileset/Floors/Misc/checker_base.png # Stellar
+  sprite: /Textures/Tiles/checker_dark.png
   variants: 4
   placementVariants:
   - 1.0
@@ -55,7 +55,7 @@
 - type: tile
   id: FloorSteelMini
   name: tiles-steel-floor-mini
-  sprite: /Textures/_ST/Tileset/Floors/Grey/grey_mini.png # Stellar
+  sprite: /Textures/Tiles/steel_mini.png
   variants: 4
   placementVariants:
   - 1.0
@@ -73,7 +73,7 @@
 - type: tile
   id: FloorSteelPavement
   name: tiles-steel-floor-pavement
-  sprite: /Textures/_ST/Tileset/Floors/Grey/grey_mini_brick_2.png # Stellar
+  sprite: /Textures/Tiles/steel_pavement.png
   variants: 4
   placementVariants:
   - 1.0
@@ -121,7 +121,7 @@
 - type: tile
   id: FloorSteelMono
   name: tiles-steel-floor-mono
-  sprite: /Textures/_ST/Tileset/Floors/Grey/grey_mono.png # Stellar
+  sprite: /Textures/Tiles/steel_mono.png
   variants: 4
   placementVariants:
   - 1.0
@@ -139,7 +139,7 @@
 - type: tile
   id: FloorSteelPavementVertical
   name: tiles-steel-floor-pavement-vertical
-  sprite: /Textures/_ST/Tileset/Floors/Grey/grey_mini_brick_1.png # Stellar
+  sprite: /Textures/Tiles/steel_pavement_vertical.png
   variants: 4
   placementVariants:
   - 1.0
@@ -157,7 +157,7 @@
 - type: tile
   id: FloorSteelHerringbone
   name: tiles-steel-floor-herringbone
-  sprite: /Textures/_ST/Tileset/Floors/Grey/grey_mini_brick_herringbone.png # Stellar
+  sprite: /Textures/Tiles/steel_herringbone.png
   variants: 4
   placementVariants:
   - 1.0
@@ -235,7 +235,7 @@
 - type: tile
   id: FloorWood
   name: tiles-wood
-  sprite: /Textures/_ST/Tileset/Floors/Wood/wood_thin_1.png # Stellar
+  sprite: /Textures/Tiles/wood.png
   variants: 4
   placementVariants:
   - 1.0
@@ -255,7 +255,7 @@
 - type: tile
   id: FloorWhite
   name: tiles-white-floor
-  sprite: /Textures/_ST/Tileset/Floors/White/white_base.png # Stellar
+  sprite: /Textures/Tiles/white.png
   variants: 4
   placementVariants:
   - 1.0
@@ -273,7 +273,7 @@
 - type: tile
   id: FloorWhiteMini
   name: tiles-white-floor-mini
-  sprite: /Textures/_ST/Tileset/Floors/White/white_mini.png # Stellar
+  sprite: /Textures/Tiles/white_mini.png
   variants: 4
   placementVariants:
   - 1.0
@@ -291,7 +291,7 @@
 - type: tile
   id: FloorWhitePavement
   name: tiles-white-floor-pavement
-  sprite: /Textures/_ST/Tileset/Floors/White/white_mini_brick_2.png # Stellar
+  sprite: /Textures/Tiles/white_pavement.png
   variants: 4
   placementVariants:
   - 1.0
@@ -339,7 +339,7 @@
 - type: tile
   id: FloorWhiteMono
   name: tiles-white-floor-mono
-  sprite: /Textures/_ST/Tileset/Floors/White/white_mono.png # Stellar
+  sprite: /Textures/Tiles/white_mono.png
   variants: 4
   placementVariants:
   - 1.0
@@ -357,7 +357,7 @@
 - type: tile
   id: FloorWhitePavementVertical
   name: tiles-white-floor-pavement-vertical
-  sprite: /Textures/_ST/Tileset/Floors/White/white_mini_brick_1.png # Stellar
+  sprite: /Textures/Tiles/white_pavement_vertical.png
   variants: 4
   placementVariants:
   - 1.0
@@ -375,7 +375,7 @@
 - type: tile
   id: FloorWhiteHerringbone
   name: tiles-white-floor-herringbone
-  sprite: /Textures/_ST/Tileset/Floors/White/white_mini_brick_herringbone.png # Stellar
+  sprite: /Textures/Tiles/white_herringbone.png
   variants: 4
   placementVariants:
   - 1.0
@@ -411,7 +411,7 @@
 - type: tile
   id: FloorWhitePlastic
   name: tiles-plastic-white-floor
-  sprite: /Textures/_ST/Tileset/Floors/White/white_base.png # Stellar
+  sprite: /Textures/Tiles/white_plastic.png
   variants: 4
   placementVariants:
   - 1.0
@@ -429,7 +429,7 @@
 - type: tile
   id: FloorDark
   name: tiles-dark-floor
-  sprite: /Textures/_ST/Tileset/Floors/Dark/dark_base.png # Stellar
+  sprite: /Textures/Tiles/dark.png
   variants: 4
   placementVariants:
   - 1.0
@@ -447,7 +447,7 @@
 - type: tile
   id: FloorDarkMini
   name: tiles-dark-floor-mini
-  sprite: /Textures/_ST/Tileset/Floors/Dark/dark_mini.png # Stellar
+  sprite: /Textures/Tiles/dark_mini.png
   variants: 4
   placementVariants:
   - 1.0
@@ -465,7 +465,7 @@
 - type: tile
   id: FloorDarkPavement
   name: tiles-dark-floor-pavement
-  sprite: /Textures/_ST/Tileset/Floors/Dark/dark_mini_brick_2.png # Stellar
+  sprite: /Textures/Tiles/dark_pavement.png
   variants: 4
   placementVariants:
   - 1.0
@@ -513,7 +513,7 @@
 - type: tile
   id: FloorDarkMono
   name: tiles-dark-floor-mono
-  sprite: /Textures/_ST/Tileset/Floors/Dark/dark_mono.png # Stellar
+  sprite: /Textures/Tiles/dark_mono.png
   variants: 4
   placementVariants:
   - 1.0
@@ -531,7 +531,7 @@
 - type: tile
   id: FloorDarkPavementVertical
   name: tiles-dark-floor-pavement-vertical
-  sprite: /Textures/_ST/Tileset/Floors/Dark/dark_mini_brick_1.png # Stellar
+  sprite: /Textures/Tiles/dark_pavement_vertical.png
   variants: 4
   placementVariants:
   - 1.0
@@ -549,7 +549,7 @@
 - type: tile
   id: FloorDarkHerringbone
   name: tiles-dark-floor-herringbone
-  sprite: /Textures/_ST/Tileset/Floors/Dark/dark_mini_brick_herringbone.png # Stellar
+  sprite: /Textures/Tiles/dark_herringbone.png
   variants: 4
   placementVariants:
   - 1.0
@@ -585,7 +585,7 @@
 - type: tile
   id: FloorDarkPlastic
   name: tiles-plastic-dark-floor
-  sprite: /Textures/_ST/Tileset/Floors/Dark/dark_base.png # Stellar
+  sprite: /Textures/Tiles/dark_plastic.png
   variants: 4
   placementVariants:
   - 1.0
@@ -862,13 +862,7 @@
 - type: tile
   id: FloorKitchen
   name: tiles-kitchen-floor
-  sprite: /Textures/_ST/Tileset/Floors/Misc/checker_base.png # Stellar
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/Tiles/kitchen.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1356,7 +1350,7 @@
 - type: tile
   id: FloorGlass
   name: tiles-glass-floor
-  sprite: /Textures/_ST/Tileset/Floors/Glass_Basic/glass_base.png # Stellar
+  sprite: /Textures/Tiles/glass.png
   variants: 4
   placementVariants:
   - 1.0
@@ -1849,7 +1843,7 @@
 - type: tile
   id: FloorWoodTile
   name: tiles-wood2
-  sprite: /Textures/_ST/Tileset/Floors/Wood/wood_thin_patterned.png # Stellar
+  sprite: /Textures/Tiles/wood_tile.png
   variants: 4
   placementVariants:
   - 1.0
@@ -2052,7 +2046,7 @@
 - type: tile
   id: FloorWoodLarge
   name: tiles-wood-large
-  sprite: /Textures/_ST/Tileset/Floors/Wood/wood_base.png # Stellar
+  sprite: /Textures/Tiles/wood_large.png
   variants: 4
   placementVariants:
   - 1.0

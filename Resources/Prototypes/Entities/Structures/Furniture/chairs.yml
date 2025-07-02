@@ -56,6 +56,8 @@
   id: UnanchoredChairBase
   parent: SeatBase
   abstract: true
+  placement: # Stellar - Wallening
+    mode: SnapgridCenter # Stellar - Wallening
   components:
   - type: Anchorable
   - type: Rotatable
@@ -104,6 +106,7 @@
   parent: ChairBase
   components:
   - type: Sprite
+    sprite: _ST/Tileset/Decor/Chairs/steel_chair.rsi # Stellar - Wallening
     state: chair
   - type: Construction
     graph: Seat
@@ -116,7 +119,7 @@
   suffix: White
   components:
   - type: Sprite
-    state: chair-greyscale
+    state: chair # Stellar - Wallening
 
 - type: entity
   name: stool
@@ -158,7 +161,8 @@
   parent: OfficeChairBase
   components:
   - type: Sprite
-    state: office-white
+    sprite: _ST/Tileset/Decor/Chairs/office_chair.rsi # Stellar - Wallening
+    state: chair # Stellar - Wallening
   - type: Construction
     graph: Seat
     node: chairOffice
@@ -169,7 +173,8 @@
   parent: ChairOfficeLight
   components:
   - type: Sprite
-    state: office-dark
+    sprite: _ST/Tileset/Decor/Chairs/office_chair.rsi # Stellar - Wallening
+    state: chair # Stellar - Wallening
   - type: Construction
     graph: Seat
     node: chairOfficeDark
@@ -181,7 +186,8 @@
   description: It looks comfy.
   components:
   - type: Sprite
-    state: comfy
+    sprite: _ST/Tileset/Decor/Chairs/comfy_chair.rsi # Stellar - Wallening
+    state: chair # Stellar - Wallening
   - type: Construction
     graph: Seat
     node: chairComfy
@@ -204,7 +210,8 @@
   parent: UnanchoredChairBase
   components:
   - type: Sprite
-    state: wooden
+    sprite: _ST/Tileset/Decor/Chairs/wood_chair.rsi # Stellar - Wallening
+    state: chair # Stellar - Wallening
   - type: Construction
     graph: Seat
     node: chairWood
@@ -248,6 +255,7 @@
   description: Looks uncomfortable.
   components:
   - type: Sprite
+    sprite: Structures/Furniture/chairs.rsi # Stellar - Wallening
     state: ritual
   - type: Construction
     graph: RitualSeat
@@ -272,6 +280,7 @@
   description: It's staring back.
   components:
   - type: Sprite
+    sprite: Structures/Furniture/chairs.rsi # Stellar - Wallening
     state: cursed
   - type: Strap
     buckleSound:

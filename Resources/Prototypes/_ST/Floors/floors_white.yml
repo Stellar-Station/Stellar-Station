@@ -1,0 +1,239 @@
+- type: tile
+  id: StellarFloorWhiteBase
+  name: st-floor-white-base
+  sprite: /Textures/_ST/Tileset/Floor/White/white_base.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteCornerNw
+  name: st-floor-white-corner-nw
+  sprite: /Textures/_ST/Tileset/Floor/White/white_corner_nw.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteCornerNe
+  name: st-floor-white-corner-ne
+  sprite: /Textures/_ST/Tileset/Floor/White/white_corner_ne.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteCornerSe
+  name: st-floor-white-corner-se
+  sprite: /Textures/_ST/Tileset/Floor/White/white_corner_se.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteCornerSw
+  name: st-floor-white-corner-sw
+  sprite: /Textures/_ST/Tileset/Floor/White/white_corner_sw.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteDouble1
+  name: st-floor-white-double1
+  sprite: /Textures/_ST/Tileset/Floor/White/white_doublewide_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteDouble2
+  name: st-floor-white-double2
+  sprite: /Textures/_ST/Tileset/Floor/White/white_doublewide_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteMini
+  name: st-floor-white-mini
+  sprite: /Textures/_ST/Tileset/Floor/White/white_mini.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteMiniBrick1
+  name: st-floor-white-mini-brick1
+  sprite: /Textures/_ST/Tileset/Floor/White/white_mini_brick_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteMiniBrick2
+  name: st-floor-white-mini-brick2
+  sprite: /Textures/_ST/Tileset/Floor/White/white_mini_brick_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteMiniBrickHerringbone
+  name: st-floor-white-herringbone
+  sprite: /Textures/_ST/Tileset/Floor/White/white_mini_brick_herringbone.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteMono
+  name: st-floor-white-mono
+  sprite: /Textures/_ST/Tileset/Floor/White/white_mono.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhitePlate
+  name: st-floor-white-plating
+  sprite: /Textures/_ST/Tileset/Floor/White/white_plate.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteProcessor
+  name: st-floor-white-processor
+  sprite: /Textures/_ST/Tileset/Floor/White/white_processor.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteTechy
+  name: st-floor-white-techy
+  sprite: /Textures/_ST/Tileset/Floor/White/white_techy.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteVented
+  name: st-floor-white-vented
+  sprite: /Textures/_ST/Tileset/Floor/White/white_vented.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteWideE
+  name: st-floor-white-wide-e
+  sprite: /Textures/_ST/Tileset/Floor/White/white_wide_e.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteWideN
+  name: st-floor-white-wide-n
+  sprite: /Textures/_ST/Tileset/Floor/White/white_wide_n.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteWideS
+  name: st-floor-white-wide-s
+  sprite: /Textures/_ST/Tileset/Floor/White/white_wide_s.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorWhiteWideW
+  name: st-floor-white-wide-w
+  sprite: /Textures/_ST/Tileset/Floor/White/white_wide_w.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000

@@ -1,0 +1,143 @@
+- type: tile
+  id: StellarFloorDarkDottedBase
+  name: st-floor-dark-dotted-base
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_base.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedCornerNw
+  name: st-floor-dark-dotted-corner-nw
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_corner_nw.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedCornerNe
+  name: st-floor-dark-dotted-corner-ne
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_corner_ne.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedCornerSe
+  name: st-floor-dark-dotted-corner-se
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_corner_se.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedCornerSw
+  name: st-floor-dark-dotted-corner-sw
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_corner_sw.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedDouble1
+  name: st-floor-dark-dotted-double1
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_doublewide_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedDouble2
+  name: st-floor-dark-dotted-double2
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_doublewide_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedMono
+  name: st-floor-dark-dotted-mono
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_mono.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedWideE
+  name: st-floor-dark-dotted-wide-e
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_wide_e.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedWideN
+  name: st-floor-dark-dotted-wide-n
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_wide_n.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedWideS
+  name: st-floor-dark-dotted-wide-s
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_wide_s.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorDarkDottedWideW
+  name: st-floor-dark-dotted-wide-w
+  sprite: /Textures/_ST/Tileset/Floor/Dark_Dotted/dark_dotted_wide_w.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000

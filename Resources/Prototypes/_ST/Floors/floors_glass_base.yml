@@ -1,0 +1,108 @@
+##################### REGULAR GLASS
+- type: tile
+  id: StellarFloorGlassBase
+  name: st-floor-glass-base
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Basic/glass_base.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassDouble1
+  name: st-floor-glass-double1
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Basic/glass_double_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassDouble2
+  name: st-floor-glass-double2
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Basic/glass_double_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassMono
+  name: st-floor-glass-mono
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Basic/glass_mono.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassMulti1
+  name: st-floor-glass-multi1
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Basic/glass_multi_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassMulti2
+  name: st-floor-glass-multi2
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Basic/glass_multi_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassFramedDouble1
+  name: st-floor-glass-framed-double1
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Basic/glass_framed_double_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassFramedDouble2
+  name: st-floor-glass-framed-double2
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Basic/glass_framed_double_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGlassFramedMono
+  name: st-floor-glass-framed-mono
+  sprite: /Textures/_ST/Tileset/Floor/Glass_Basic/glass_framed_mono.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 10000

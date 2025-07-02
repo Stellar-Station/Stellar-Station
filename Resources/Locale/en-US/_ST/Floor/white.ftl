@@ -1,0 +1,34 @@
+
+st-floor-white-base = white tile
+st-floor-white-corner-ne = white corner tile NE
+st-floor-white-corner-nw =  white corner tile NW
+st-floor-white-corner-se = white corner tile SE
+st-floor-white-corner-sw = white corner tile SW
+st-floor-white-double1 = white double tile
+st-floor-white-double2 = white double tile horizontal
+st-floor-white-mini = white mini tile
+st-floor-white-mini-brick1 = white brick tile
+st-floor-white-mini-brick2 = white brick tile horizontal
+st-floor-white-herringbone = white herringbone tile
+st-floor-white-mono = white mono tile
+st-floor-white-plating = white plating tile
+st-floor-white-processor = white processor tile
+st-floor-white-techy = white techy tile
+st-floor-white-vented = white vented tile
+st-floor-white-wide-n = white wide tile N
+st-floor-white-wide-s = white wide tile S
+st-floor-white-wide-w = white wide tile W
+st-floor-white-wide-e = white wide tile E
+
+st-floor-white-dotted-base = dotted white tile
+st-floor-white-dotted-corner-ne = dotted white corner tile NE
+st-floor-white-dotted-corner-nw = dotted white corner tile NW
+st-floor-white-dotted-corner-se = dotted white corner tile SE
+st-floor-white-dotted-corner-sw = dotted white corner tile SW
+st-floor-white-dotted-double1 = dotted white double tile
+st-floor-white-dotted-double2 = dotted white double tile horizontal
+st-floor-white-dotted-mono = dotted white mono tile
+st-floor-white-dotted-wide-n = dotted white wide tile N
+st-floor-white-dotted-wide-s = dotted white wide tile S
+st-floor-white-dotted-wide-w = dotted white wide tile W
+st-floor-white-dotted-wide-e = dotted white wide tile E

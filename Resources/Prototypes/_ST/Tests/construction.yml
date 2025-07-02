@@ -1,0 +1,139 @@
+## GLASS WINDOW
+- type: constructionGraph
+  id: StellarWindow
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: StellarWindowFrameSteel
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: Steel
+              amount: 1
+              doAfter: 1
+
+    - node: StellarWindowFrameSteel
+      entity: StellarWindowFrameSteel
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: Steel
+              amount: 1
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Prying
+              doAfter: 1
+        - to: StellarWindowGlass
+          steps:
+            - material: Glass
+              amount: 1
+              doAfter: 1
+        - to: StellarWindowGlassReinforced
+          steps:
+            - material: ReinforcedGlass
+              amount: 1
+              doAfter: 1
+        - to: StellarWindowPlasma
+          steps:
+            - material: PlasmaGlass
+              amount: 1
+              doAfter: 1
+        - to: StellarWindowPlasmaReinforced
+          steps:
+            - material: ReinforcedPlasmaGlass
+              amount: 1
+              doAfter: 1
+        - to: StellarWindowUranium
+          steps:
+            - material: UraniumGlass
+              amount: 1
+              doAfter: 1
+        - to: StellarWindowUraniumReinforced
+          steps:
+            - material: ReinforcedUraniumGlass
+              amount: 1
+              doAfter: 1
+
+    - node: StellarWindowGlass
+      entity: StellarWindowGlass
+      edges:
+        - to: StellarWindowFrameSteel
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+          completed:
+            - !type:SpawnPrototype
+              prototype: Glass
+              amount: 1
+    - node: StellarWindowGlassReinforced
+      entity: StellarWindowGlassReinforced
+      edges:
+        - to: StellarWindowFrameSteel
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+          completed:
+            - !type:SpawnPrototype
+              prototype: ReinforcedGlass
+              amount: 1
+
+    - node: StellarWindowPlasma
+      entity: StellarWindowPlasma
+      edges:
+        - to: StellarWindowFrameSteel
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+          completed:
+            - !type:SpawnPrototype
+              prototype: PlasmaGlass
+              amount: 1
+    - node: StellarWindowPlasmaReinforced
+      entity: StellarWindowPlasmaReinforced
+      edges:
+        - to: StellarWindowFrameSteel
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+          completed:
+            - !type:SpawnPrototype
+              prototype: ReinforcedPlasmaGlass
+              amount: 1
+
+    - node: StellarWindowUranium
+      entity: StellarWindowUranium
+      edges:
+        - to: StellarWindowFrameSteel
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+          completed:
+            - !type:SpawnPrototype
+              prototype: UraniumGlass
+              amount: 1
+    - node: StellarWindowUraniumReinforced
+      entity: StellarWindowUraniumReinforced
+      edges:
+        - to: StellarWindowFrameSteel
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+          completed:
+            - !type:SpawnPrototype
+              prototype: ReinforcedUraniumGlass
+              amount: 1

@@ -1,0 +1,239 @@
+- type: tile
+  id: StellarFloorGreyBase
+  name: st-floor-grey-base
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_base.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyCornerNw
+  name: st-floor-grey-corner-nw
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_corner_nw.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyCornerNe
+  name: st-floor-grey-corner-ne
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_corner_ne.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyCornerSe
+  name: st-floor-grey-corner-se
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_corner_se.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyCornerSw
+  name: st-floor-grey-corner-sw
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_corner_sw.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyDouble1
+  name: st-floor-grey-double1
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_doublewide_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyDouble2
+  name: st-floor-grey-double2
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_doublewide_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyMini
+  name: st-floor-grey-mini
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_mini.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyMiniBrick1
+  name: st-floor-grey-mini-brick1
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_mini_brick_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyMiniBrick2
+  name: st-floor-grey-mini-brick2
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_mini_brick_2.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyMiniBrickHerringbone
+  name: st-floor-grey-herringbone
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_mini_brick_herringbone.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyMono
+  name: st-floor-grey-mono
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_mono.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyPlate
+  name: st-floor-grey-plating
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_plate.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyProcessor
+  name: st-floor-grey-processor
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_processor.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyTechy
+  name: st-floor-grey-techy
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_techy.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyVented
+  name: st-floor-grey-vented
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_vented.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyWideE
+  name: st-floor-grey-wide-e
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_wide_e.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyWideN
+  name: st-floor-grey-wide-n
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_wide_n.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyWideS
+  name: st-floor-grey-wide-s
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_wide_s.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: StellarFloorGreyWideW
+  name: st-floor-grey-wide-w
+  sprite: /Textures/_ST/Tileset/Floor/Grey/grey_wide_w.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
