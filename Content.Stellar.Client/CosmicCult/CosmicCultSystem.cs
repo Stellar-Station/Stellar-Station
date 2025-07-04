@@ -18,6 +18,7 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
 {
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private readonly SpriteSystem _sprite = default!;
 
     private readonly ResPath _rsiPath = new("/Textures/_ST/CosmicCult/Effects/ability_siphonvfx.rsi");
 
@@ -45,15 +46,14 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     private void OnSiphon(CosmicSiphonIndicatorEvent args)
     {
         var ent = GetEntity(args.Target);
-        if (!TryComp<SpriteComponent>(ent, out var sprite))
-            return;
-        var layer = sprite.AddLayer(new SpriteSpecifier.Rsi(_rsiPath, "vfx"));
-        sprite.LayerMapSet(CultSiphonedVisuals.Key, layer);
-        sprite.LayerSetOffset(layer, new Vector2(0, 0.8f));
-        sprite.LayerSetScale(layer, new Vector2(0.65f, 0.65f));
-        sprite.LayerSetShader(layer, "unshaded");
+        var layer = _sprite.AddLayer(ent, new SpriteSpecifier.Rsi(_rsiPath, "vfx"));
+        _sprite.LayerMapSet(ent, CultSiphonedVisuals.Key, layer);
+        _sprite.LayerSetOffset(ent, layer, new Vector2(0, 0.8f));
+        _sprite.LayerSetScale(ent, layer, new Vector2(0.65f, 0.65f));
+        if (TryComp<SpriteComponent>(ent, out var sprite))
+            sprite.LayerSetShader(layer, "unshaded");
 
-        Timer.Spawn(TimeSpan.FromSeconds(2), () => sprite.RemoveLayer(CultSiphonedVisuals.Key));
+        Timer.Spawn(TimeSpan.FromSeconds(2), () => _sprite.RemoveLayer(ent, CultSiphonedVisuals.Key));
         _audio.PlayLocal(_siphonSFX, ent, ent, AudioParams.Default.WithVariation(0.1f));
     }
 
@@ -62,56 +62,51 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
         if (args.Alert.ID != ent.Comp.EntropyAlert)
             return;
         var entropy = Math.Clamp(ent.Comp.EntropyStored, 0, 14);
-        var sprite = args.SpriteViewEnt.Comp;
-        sprite.LayerSetState(AlertVisualLayers.Base, $"base{entropy}");
-        sprite.LayerSetState(CultAlertVisualLayers.Counter, $"num{entropy}");
+        _sprite.LayerSetRsiState(args.SpriteViewEnt.Owner, AlertVisualLayers.Base, $"base{entropy}");
+        _sprite.LayerSetRsiState(args.SpriteViewEnt.Owner, CultAlertVisualLayers.Counter, $"num{entropy}");
     }
     #endregion
 
     #region Layer Additions
     private void OnCosmicStarMarkAdded(Entity<CosmicStarMarkComponent> uid, ref ComponentStartup args)
     {
-        if (!TryComp<SpriteComponent>(uid, out var sprite) || sprite.LayerMapTryGet(CosmicRevealedKey.Key, out _))
+        if (_sprite.LayerMapTryGet(uid.Owner, CosmicRevealedKey.Key, out _, false))
             return;
 
-        var layer = sprite.AddLayer(uid.Comp.Sprite);
-        sprite.LayerMapSet(CosmicRevealedKey.Key, layer);
-        sprite.LayerSetShader(layer, "unshaded");
+        var layer = _sprite.AddLayer(uid.Owner, uid.Comp.Sprite);
+        _sprite.LayerMapSet(uid.Owner, CosmicRevealedKey.Key, layer);
+        if (TryComp<SpriteComponent>(uid.Owner, out var sprite))
+            sprite.LayerSetShader(layer, "unshaded");
 
         //offset the mark if the mob has an offset comp, needed for taller species like Thaven
         if (TryComp<CosmicStarMarkOffsetComponent>(uid, out var offset))
         {
-            sprite.LayerSetOffset(CosmicRevealedKey.Key, offset.Offset);
+            _sprite.LayerSetOffset(uid.Owner, CosmicRevealedKey.Key, offset.Offset);
         }
     }
 
     private void OnCosmicImpositionAdded(Entity<CosmicImposingComponent> uid, ref ComponentStartup args)
     {
-        if (!TryComp<SpriteComponent>(uid, out var sprite) || sprite.LayerMapTryGet(CosmicImposingKey.Key, out _))
+        if (_sprite.LayerMapTryGet(uid.Owner, CosmicImposingKey.Key, out _, false))
             return;
 
-        var layer = sprite.AddLayer(uid.Comp.Sprite);
+        var layer = _sprite.AddLayer(uid.Owner, uid.Comp.Sprite);
 
-        sprite.LayerMapSet(CosmicImposingKey.Key, layer);
-        sprite.LayerSetShader(layer, "unshaded");
+        _sprite.LayerMapSet(uid.Owner, CosmicImposingKey.Key, layer);
+        if (TryComp<SpriteComponent>(uid, out var sprite))
+            sprite.LayerSetShader(layer, "unshaded");
     }
     #endregion
 
     #region Layer Removals
     private void OnCosmicStarMarkRemoved(Entity<CosmicStarMarkComponent> uid, ref ComponentShutdown args)
     {
-        if (!TryComp<SpriteComponent>(uid, out var sprite))
-            return;
-
-        sprite.RemoveLayer(CosmicRevealedKey.Key);
+        _sprite.RemoveLayer(uid.Owner, CosmicRevealedKey.Key);
     }
 
     private void OnCosmicImpositionRemoved(Entity<CosmicImposingComponent> uid, ref ComponentShutdown args)
     {
-        if (!TryComp<SpriteComponent>(uid, out var sprite))
-            return;
-
-        sprite.RemoveLayer(CosmicImposingKey.Key);
+        _sprite.RemoveLayer(uid.Owner, CosmicImposingKey.Key);
     }
     #endregion
 

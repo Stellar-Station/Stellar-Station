@@ -210,6 +210,7 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+  - type: CosmicCenserTarget # Stellar - Cosmic Cult
 
 - type: entity
   save: false

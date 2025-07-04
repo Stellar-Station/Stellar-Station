@@ -15,7 +15,7 @@ using Content.Shared.Hands;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Popups;
-using Content.Shared.StatusEffect;
+using Content.Shared.StatusEffectNew;
 using Content.Stellar.Server.CosmicCult.EntitySystems;
 using Content.Stellar.Shared.CosmicCult.Components;
 using Content.Stellar.Shared.CosmicCult;
@@ -53,12 +53,12 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
     [Dependency] private readonly StationSystem _station = default!;
-    [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
+    [Dependency] private readonly SharedStatusEffectsSystem _statusEffects = default!;
 
     private readonly ResPath _mapPath = new("Maps/_ST/Other/cosmicvoid.yml");
 
     private static readonly EntProtoId CosmicEchoVfx = "CosmicEchoVfx";
-    private static readonly ProtoId<StatusEffectPrototype> EntropicDegen = "EntropicDegen";
+    private static readonly EntProtoId EntropicDegen = "EntropicDegen";
 
     public override void Initialize()
     {
@@ -156,7 +156,7 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     private void OnGotEquipped(Entity<CosmicEquipmentComponent> ent, ref GotEquippedEvent args)
     {
         if (!EntityIsCultist(args.Equipee))
-            _statusEffects.TryAddStatusEffect<CosmicEntropyDebuffComponent>(args.Equipee, EntropicDegen, TimeSpan.FromDays(1), true); // TimeSpan.MaxValue causes a crash here, so we use FromDays(1) instead.
+            _statusEffects.TrySetStatusEffectDuration(args.Equipee, EntropicDegen, out _);
     }
 
     private void OnGotUnequipped(Entity<CosmicEquipmentComponent> ent, ref GotUnequippedEvent args)
@@ -168,7 +168,7 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     {
         if (!EntityIsCultist(args.User))
         {
-            _statusEffects.TryAddStatusEffect<CosmicEntropyDebuffComponent>(args.User, EntropicDegen, TimeSpan.FromDays(1), true);
+            _statusEffects.TrySetStatusEffectDuration(args.User, EntropicDegen, out _);
             _popup.PopupEntity(Loc.GetString("cosmiccult-gear-pickup", ("ITEM", args.Equipped)), args.User, args.User, PopupType.MediumCaution);
         }
     }

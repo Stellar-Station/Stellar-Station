@@ -9,7 +9,7 @@ namespace Content.Stellar.Shared.CosmicCult.Components;
 /// </summary>
 [RegisterComponent]
 [AutoGenerateComponentPause]
-public sealed partial class CosmicEntropyDebuffComponent : Component
+public sealed partial class CosmicEntropyDebuffStatusEffectComponent : Component
 {
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
     [AutoPausedField]
