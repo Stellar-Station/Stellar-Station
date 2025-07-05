@@ -1,0 +1,56 @@
+- type: entity
+  abstract: true
+  parent: BaseMachineCircuitboard
+  id: BaseTechFabCircuitboardStellar
+  components:
+  - type: MachineBoard
+    stackRequirements:
+      Manipulator: 4
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+
+- type: entity
+  parent: BaseTechFabCircuitboardStellar
+  id: TechFabCircuitboardEngineering
+  name: engineering techfab machine board
+  description: A machine printed circuit board for an engineering techfab.
+  components:
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: StellarTechFabEngineering
+
+- type: entity
+  parent: BaseTechFabCircuitboardStellar
+  id: TechFabCircuitboardCargo
+  name: cargo techfab machine board
+  description: A machine printed circuit board for a cargo techfab.
+  components:
+  - type: Sprite
+    state: supply
+  - type: MachineBoard
+    prototype: StellarTechFabCargo
+
+- type: entity
+  parent: BaseTechFabCircuitboardStellar
+  id: TechFabCircuitboardService
+  name: service techfab machine board
+  description: A machine printed circuit board for a service techfab.
+  components:
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: StellarTechFabService
+
+- type: entity
+  parent: BaseTechFabCircuitboardStellar
+  id: TechFabCircuitboardScience
+  name: science techfab machine board
+  description: A machine printed circuit board for a science techfab.
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: StellarTechFabScience
