@@ -1432,7 +1432,7 @@
       methods: [ Touch ]
       effects:
       - !type:WashCreamPieReaction
-
+  - type: CosmicCenserTarget # Stellar - Cosmic Cult
 
 
 - type: entity

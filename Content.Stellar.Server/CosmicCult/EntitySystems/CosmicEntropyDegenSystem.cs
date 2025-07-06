@@ -1,8 +1,10 @@
-using Content.Stellar.Shared.CosmicCult.Components;
-using Robust.Shared.Timing;
 using Content.Shared.Damage;
 using Content.Shared.Popups;
+using Content.Shared.StatusEffectNew.Components;
+using Content.Shared.StatusEffectNew;
+using Content.Stellar.Shared.CosmicCult.Components;
 using Robust.Shared.Random;
+using Robust.Shared.Timing;
 
 namespace Content.Stellar.Server.CosmicCult.EntitySystems;
 
@@ -13,32 +15,33 @@ namespace Content.Stellar.Server.CosmicCult.EntitySystems;
 public sealed partial class CosmicEntropyDegenSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {
-        SubscribeLocalEvent<CosmicEntropyDebuffComponent, ComponentStartup>(OnInit);
+        SubscribeLocalEvent<CosmicEntropyDebuffStatusEffectComponent, StatusEffectAppliedEvent>(OnInit);
     }
 
-    private void OnInit(EntityUid uid, CosmicEntropyDebuffComponent comp, ref ComponentStartup args)
+    private void OnInit(Entity<CosmicEntropyDebuffStatusEffectComponent> ent, ref StatusEffectAppliedEvent args)
     {
-        _damageable.TryChangeDamage(uid, comp.Degen, true, false);
-        comp.CheckTimer = _timing.CurTime + comp.CheckWait;
+        _damageable.TryChangeDamage(args.Target, ent.Comp.Degen, true, false);
+        ent.Comp.CheckTimer = _timing.CurTime + ent.Comp.CheckWait;
     }
 
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
 
-        var query = EntityQueryEnumerator<CosmicEntropyDebuffComponent>();
-        while (query.MoveNext(out var uid, out var component))
+        var query = EntityQueryEnumerator<CosmicEntropyDebuffStatusEffectComponent, StatusEffectComponent>();
+        while (query.MoveNext(out var _, out var component, out var statusEffect))
         {
             if (_timing.CurTime < component.CheckTimer)
                 continue;
+            if (statusEffect.AppliedTo is not { } target)
+                continue;
+
             component.CheckTimer = _timing.CurTime + component.CheckWait;
-            _damageable.TryChangeDamage(uid, component.Degen, true, false);
+            _damageable.TryChangeDamage(target, component.Degen, true, false);
         }
     }
 }
