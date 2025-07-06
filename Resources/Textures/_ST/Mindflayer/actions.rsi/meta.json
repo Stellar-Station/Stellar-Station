@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "swarmprod and quick_reboot from https://github.com/ParadiseSS13/Paradise/blob/505faec7261e4d71a68d677f36d91cc1631fc685/icons/mob/actions/flayer_actions.dmi, bg_flayer, choose_module, pd_cablehop, genetic_poly from https://github.com/ParadiseSS13/Paradise/blob/505faec7261e4d71a68d677f36d91cc1631fc685/icons/mob/actions/actions.dmi, camera_bug from https://github.com/ParadiseSS13/Paradise/blob/505faec7261e4d71a68d677f36d91cc1631fc685/icons/obj/device.dmi, voice_modulator from https://github.com/ParadiseSS13/Paradise/blob/505faec7261e4d71a68d677f36d91cc1631fc685/icons/obj/clothing/voice_modulator.dmi",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "bg_flayer"
+        },
+        {
+            "name": "choose_module"
+        },
+        {
+            "name": "swarmprod"
+        },
+        {
+            "name": "quick_reboot"
+        },
+        {
+            "name": "camera_bug"
+        },
+        {
+            "name": "pd_cablehop"
+        },
+        {
+            "name": "genetic_poly"
+        },
+        {
+            "name": "voice_modulator"
+        }
+    ]
+}

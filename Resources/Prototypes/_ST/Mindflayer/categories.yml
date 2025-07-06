@@ -1,0 +1,11 @@
+- type: storeCategory
+  id: MindflayerPassive
+  name: store-category-passive
+
+- type: storeCategory
+  id: MindflayerIntruder
+  name: store-category-intruder
+
+- type: storeCategory
+  id: MindflayerDestroyer
+  name: store-category-destroyer

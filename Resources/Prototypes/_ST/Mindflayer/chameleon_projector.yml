@@ -1,0 +1,4 @@
+- type: entity
+  parent: ChameleonProjector
+  id: MindflayerChameleonProjector
+  description: Our nanites, arranged in a swarm that can disguise us.

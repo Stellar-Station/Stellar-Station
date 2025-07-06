@@ -1,0 +1,18 @@
+<DefaultWindow
+    xmlns="https://spacestation14.io"
+    xmlns:viewport="clr-namespace:Content.Client.Viewport;assembly=Content.Client"
+    Title="{Loc 'camfecting-bug-window-title'}">
+
+    <BoxContainer Orientation="Vertical" VerticalExpand="True" Access="Public">
+        <OptionButton Name="CameraSelector" />
+
+        <Control VerticalExpand="True" HorizontalExpand="True" Margin="5 5 5 5" Name="CameraViewBox">
+            <viewport:ScalingViewport Name="CameraView"
+                                      VerticalExpand="True"
+                                      HorizontalExpand="True"
+                                      MinSize="400 400"
+                                      MouseFilter="Ignore" />
+            <TextureRect VerticalExpand="True" HorizontalExpand="True" MinSize="400 400" Name="CameraViewBackground" />
+        </Control>
+    </BoxContainer>
+</DefaultWindow>

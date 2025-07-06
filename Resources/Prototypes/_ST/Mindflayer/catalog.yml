@@ -1,0 +1,82 @@
+- type: listing
+  id: MindFlayerCamfectingBug
+  name: Camfecting Bug
+  description: We hack a camera such that we may see from it
+  productAction: ActionMindFlayerCamfectingBug
+  cost:
+    RecoveredMind: 50
+  categories:
+  - MindflayerIntruder
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: MindFlayerTraceroute
+  name: Traceroute
+  description: Allows us to record a computer's address. We can then use another computer to recall ourselves to it
+  productAction: ActionMindFlayerTraceroute
+  cost:
+    RecoveredMind: 125
+  categories:
+  - MindflayerIntruder
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: MindFlayerFacsimile
+  name: Facsimile
+  description: Allows us to rearrange our surface to resemble something we see.
+  productAction: ActionMindFlayerFacsimile
+  cost:
+    RecoveredMind: 80
+  categories:
+  - MindflayerIntruder
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: MindFlayerEnhancedVoiceModule
+  name: Enhanced Voice Module
+  description: Allows us to configure vocal modulator to sound like a different person.
+  productEvent: !type:MindflayerAddImplantEvent
+    implant: MindflayerVoiceMaskImplant
+  raiseProductEventOnUser: true
+  cost:
+    RecoveredMind: 80
+  icon:
+    sprite: _ST/Mindflayer/actions.rsi
+    state: voice_modulator
+  categories:
+  - MindflayerIntruder
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: MindFlayerDestructiveInterference
+  name: Destructive Interference
+  description: Allows us to toggle a radio jamming signal.
+  productAction: ActionMindFlayerDestructiveInterference
+  cost:
+    RecoveredMind: 80
+  categories:
+  - MindflayerIntruder
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: MindFlayerIntegratedAccessTuner
+  name: Integrated Access Tuner
+  description: Allows us to hack any panel remotely.
+  productAction: ActionMindFlayerIntegratedAccessTuner
+  cost:
+    RecoveredMind: 100
+  categories:
+  - MindflayerIntruder
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
