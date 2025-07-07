@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 64
+    },
+    "license": "LicenseRef-Wallening",
+    "copyright": "By AftrLite",
+    "states": [
+        {
+            "name": "full"
+        },
+        {
+            "name": "shuttle0",
+            "directions": 4
+        },
+        {
+            "name": "shuttle1",
+            "directions": 4
+        },
+        {
+            "name": "shuttle2",
+            "directions": 4
+        },
+        {
+            "name": "shuttle3",
+            "directions": 4
+        },
+        {
+            "name": "shuttle4",
+            "directions": 4
+        },
+        {
+            "name": "shuttle5",
+            "directions": 4
+        },
+        {
+            "name": "shuttle6",
+            "directions": 4
+        },
+        {
+            "name": "shuttle7",
+            "directions": 4
+        }
+    ]
+}

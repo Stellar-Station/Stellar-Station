@@ -1,0 +1,50 @@
+{
+  "version":1,
+  "size":{
+    "x":96,
+    "y":96
+  },
+  "license": "LicenseRef-Wallening",
+  "copyright": "By AftrLite",
+  "states":[
+    {
+      "name": "generating",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name":"base"
+    },
+    {
+      "name": "inserting",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "panel"
+    },
+    {
+      "name": "unshaded"
+    }
+  ]
+}

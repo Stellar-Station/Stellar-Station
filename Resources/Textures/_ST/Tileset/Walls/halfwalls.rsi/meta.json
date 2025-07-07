@@ -1,0 +1,59 @@
+{
+    "version": 1,
+    "license": "LicenseRef-Wallening",
+    "copyright": "By AftrLite",
+    "size": {
+    "x": 32,
+    "y": 32
+  },
+    "states": [
+    {
+        "name": "halfwall-grey",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-grey-turn",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-grey-corner",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-grey-surround",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-dark",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-dark-turn",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-dark-corner",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-dark-surround",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-white",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-white-turn",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-white-corner",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-white-surround",
+        "directions": 4
+    }
+  ]
+}

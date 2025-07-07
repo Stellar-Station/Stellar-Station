@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "LicenseRef-Wallening",
+    "copyright": "By AftrLite",
+        "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "bed",
+            "directions": 4
+        },
+        {
+            "name": "bed-linen",
+            "directions": 4
+        },
+        {
+            "name": "bed-overlay",
+            "directions": 4
+        }
+    ]
+}

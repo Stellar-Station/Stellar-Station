@@ -20,28 +20,38 @@
   - type: Pullable
   - type: Sprite
     layers:
-      - sprite: Structures/Hydroponics/containers.rsi
-        state: hydrotray3
-      - sprite: Structures/Hydroponics/overlays.rsi
-        state: lowhealth3
+      - sprite: _ST/Tileset/Botany/botany_tray.rsi # Begin Stellar - Wallening
+        state: base0
+      - sprite: _ST/Tileset/Botany/botany_tray.rsi
+        state: alert-health
+        shader: unshaded
         map: [ "health_alert" ]
         visible: false
-      - sprite: Structures/Hydroponics/overlays.rsi
-        state: lowwater3
+      - sprite: _ST/Tileset/Botany/botany_tray.rsi
+        state: alert-water
+        shader: unshaded
         map: [ "water_alert" ]
         visible: false
-      - sprite: Structures/Hydroponics/overlays.rsi
-        state: lownutri3
+      - sprite: _ST/Tileset/Botany/botany_tray.rsi
+        state: alert-nutri
+        shader: unshaded
         map: [ "nutri_alert" ]
         visible: false
-      - sprite: Structures/Hydroponics/overlays.rsi
-        state: alert3
+      - sprite: _ST/Tileset/Botany/botany_tray.rsi
+        state: alert-misc
+        shader: unshaded
         map: [ "undefined_alert" ]
         visible: false
-      - sprite: Structures/Hydroponics/overlays.rsi
-        state: harvest3
+      - sprite: _ST/Tileset/Botany/botany_tray.rsi
+        state: alert-harvest
+        shader: unshaded
         map: [ "harvest_alert" ]
         visible: false
+  - type: SpriteFade
+  - type: IconSmooth
+    key: StellarHydrotray
+    base: base
+    mode: CardinalFlags # End Stellar - Wallening
   - type: Appearance
   - type: GenericVisualizer
     visuals:

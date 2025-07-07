@@ -309,9 +309,9 @@
   description: A square piece of glass, standing on four metal legs. Extra robust.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/r_glass.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_glass_reinf.rsi # Stellar - Wallening
   - type: Icon
-    sprite: Structures/Furniture/Tables/r_glass.rsi
+    sprite: _ST/Tileset/Decor/Tables/table_glass_reinf.rsi # Stellar - Wallening
   - type: GlassTable
     climberDamage:
       types:
@@ -352,6 +352,7 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: reinforcedglasstable
+    base: table # Stellar - Wallening
   - type: Construction
     graph: Table
     node: TableReinforcedGlass

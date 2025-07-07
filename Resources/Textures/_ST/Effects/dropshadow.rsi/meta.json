@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "license": "LicenseRef-Wallening",
+    "copyright": "By AftrLite",
+        "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "shadow-medium"
+        },
+        {
+            "name": "shadow-large"
+        },
+        {
+            "name": "shadow-ape"
+        }
+    ]
+}

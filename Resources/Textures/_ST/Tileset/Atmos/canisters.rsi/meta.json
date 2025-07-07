@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "license": "LicenseRef-Wallening",
+  "copyright": "By AftrLite",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "scrubber-open"
+    },
+    {
+      "name": "locked"
+    },
+    {
+      "name": "unlocked"
+    },
+    {
+      "name": "can-o0",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "can-o1"
+    },
+    {
+      "name": "can-o2"
+    },
+    {
+      "name": "can-o3"
+    },
+    {
+      "name": "can-connector"
+    },
+    {
+      "name": "can-open"
+    },
+    {
+      "name": "canister-airmix"
+    },
+    {
+      "name": "canister-airmix-broken"
+    },
+    {
+      "name": "canister-ammonia"
+    },
+    {
+      "name": "canister-ammonia-broken"
+    },
+    {
+      "name": "canister-frezon"
+    },
+    {
+      "name": "canister-frezon-broken"
+    },
+    {
+      "name": "canister-oxide"
+    },
+    {
+      "name": "canister-oxide-broken"
+    },
+    {
+      "name": "canister-nitrogen"
+    },
+    {
+      "name": "canister-nitrogen-broken"
+    },
+    {
+      "name": "canister-oxygen"
+    },
+    {
+      "name": "canister-oxygen-broken"
+    },
+    {
+      "name": "canister-plasma"
+    },
+    {
+      "name": "canister-plasma-broken"
+    },
+    {
+      "name": "canister-storage"
+    },
+    {
+      "name": "canister-storage-broken"
+    },
+    {
+      "name": "canister-tritium"
+    },
+    {
+      "name": "canister-tritium-broken"
+    },
+    {
+      "name": "canister-watervapor"
+    },
+    {
+      "name": "canister-watervapor-broken"
+    },
+    {
+      "name": "display-a"
+    },
+    {
+      "name": "display-c"
+    },
+    {
+      "name": "display-f"
+    },
+    {
+      "name": "display-n"
+    },
+    {
+      "name": "display-o"
+    },
+    {
+      "name": "display-p"
+    },
+    {
+      "name": "display-s"
+    },
+    {
+      "name": "display-t"
+    },
+    {
+      "name": "display-w"
+    }
+  ]
+}

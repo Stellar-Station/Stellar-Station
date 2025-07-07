@@ -106,7 +106,7 @@
   parent: ChairBase
   components:
   - type: Sprite
-    sprite: _ST/Tileset/Decor/Chairs/steel_chair.rsi # Stellar - Wallening
+    sprite: _ST/Tileset/Decor/Seating/steel_chair.rsi # Stellar - Wallening
     state: chair
   - type: Construction
     graph: Seat
@@ -161,7 +161,7 @@
   parent: OfficeChairBase
   components:
   - type: Sprite
-    sprite: _ST/Tileset/Decor/Chairs/office_chair.rsi # Stellar - Wallening
+    sprite: _ST/Tileset/Decor/Seating/office_chair.rsi # Stellar - Wallening
     state: chair # Stellar - Wallening
   - type: Construction
     graph: Seat
@@ -173,7 +173,7 @@
   parent: ChairOfficeLight
   components:
   - type: Sprite
-    sprite: _ST/Tileset/Decor/Chairs/office_chair.rsi # Stellar - Wallening
+    sprite: _ST/Tileset/Decor/Seating/office_chair.rsi # Stellar - Wallening
     state: chair # Stellar - Wallening
   - type: Construction
     graph: Seat
@@ -186,7 +186,7 @@
   description: It looks comfy.
   components:
   - type: Sprite
-    sprite: _ST/Tileset/Decor/Chairs/comfy_chair.rsi # Stellar - Wallening
+    sprite: _ST/Tileset/Decor/Seating/comfy_chair.rsi # Stellar - Wallening
     state: chair # Stellar - Wallening
   - type: Construction
     graph: Seat
@@ -210,7 +210,7 @@
   parent: UnanchoredChairBase
   components:
   - type: Sprite
-    sprite: _ST/Tileset/Decor/Chairs/wood_chair.rsi # Stellar - Wallening
+    sprite: _ST/Tileset/Decor/Seating/wood_chair.rsi # Stellar - Wallening
     state: chair # Stellar - Wallening
   - type: Construction
     graph: Seat

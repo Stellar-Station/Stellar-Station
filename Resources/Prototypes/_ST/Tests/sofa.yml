@@ -1,0 +1,42 @@
+- type: entity
+  parent: SeatBase
+  id: StellarSofa
+  name: sofa
+  description: Looks comfy.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Decor/Seating/comfy_sofa.rsi
+    layers:
+      - state: base0
+  - type: Icon
+    sprite: _ST/Tileset/Decor/Seating/comfy_sofa.rsi
+    state: full
+  - type: IconSmooth
+    key: StellarSofa
+    base: base
+    mode: CardinalFlags
+  - type: Anchorable
+  - type: Rotatable
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb {}
+        mask:
+        - FullTileMask
+        layer:
+        - SlipLayer
+        density: 1000
+        hard: false
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 1
+    sprintSpeedModifier: 0.6 # Who the heck sprints over a sofa?
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.1

@@ -1,0 +1,72 @@
+- type: entity
+  id: StellarStairsBase
+  name: stairs
+  abstract: true
+  description: Lorem Ipsum
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _ST/Tileset/Decor/Misc/stairs.rsi
+    drawdepth: FloorTiles
+  - type: IconSmooth
+    key: StellarStairs
+    base: base
+    mode: CardinalFlags
+  - type: Transform
+    anchored: true
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepCatwalk
+      params:
+        volume: 8
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.1
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.75
+    sprintSpeedModifier: 0.85
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb {}
+        mask:
+        - FullTileMask
+        layer:
+        - SlipLayer
+        density: 1000
+        hard: false
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 2
+            max: 4
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: StellarStairsGrey
+  parent: StellarStairsBase
+  name: stairs grey
+  components:
+  - type: Sprite
+    state: full

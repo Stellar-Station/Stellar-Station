@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "license": "LicenseRef-Wallening",
+    "copyright": "By AftrLite",
+    "size": {
+    "x": 32,
+    "y": 32
+  },
+    "states": [
+    {
+        "name": "railing",
+        "directions": 4
+    },
+    {
+        "name": "railing-turn",
+        "directions": 4
+    },
+    {
+        "name": "railing-surround",
+        "directions": 4
+    },
+    {
+        "name": "railing-corner-up",
+        "directions": 4
+    },
+    {
+        "name": "railing-corner-down",
+        "directions": 4
+    },
+    {
+        "name": "railing-cap-vertical",
+        "directions": 4
+    }
+  ]
+}

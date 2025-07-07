@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "license": "LicenseRef-Wallening",
+  "copyright": "By AftrLite",
+  "size": {
+    "x": 32,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "base0",
+      "directions": 4
+    },
+    {
+      "name": "base1",
+      "directions": 4
+    },
+    {
+      "name": "base2",
+      "directions": 4
+    },
+    {
+      "name": "base3",
+      "directions": 4
+    },
+    {
+      "name": "base4",
+      "directions": 4
+    },
+    {
+      "name": "base5",
+      "directions": 4
+    },
+    {
+      "name": "base6",
+      "directions": 4
+    },
+    {
+      "name": "base7",
+      "directions": 4
+    },
+    {
+      "name": "base8",
+      "directions": 4
+    },
+    {
+      "name": "base9",
+      "directions": 4
+    },
+    {
+      "name": "base10",
+      "directions": 4
+    },
+    {
+      "name": "base11",
+      "directions": 4
+    },
+    {
+      "name": "base12",
+      "directions": 4
+    },
+    {
+      "name": "base13",
+      "directions": 4
+    },
+    {
+      "name": "base14",
+      "directions": 4
+    },
+    {
+      "name": "base15",
+      "directions": 4
+    },
+    {
+      "name": "alert-misc"
+    },
+    {
+      "name": "alert-harvest"
+    },
+    {
+      "name": "alert-health"
+    },
+    {
+      "name": "alert-nutri"
+    },
+    {
+      "name": "alert-water"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- files: ["airlock_open.ogg", "airlock_close.ogg", "airlock_deny.ogg", "boltsup.ogg", "boltsdown.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "ParadiseSS13"
+  source: "https://github.com/ParadiseSS13/Paradise/tree/275677675bf34c94e9dd2e5e4e257e76a960db94/sound/machines"

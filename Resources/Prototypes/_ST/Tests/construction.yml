@@ -137,3 +137,51 @@
             - !type:SpawnPrototype
               prototype: SheetRUGlass1
               amount: 1
+
+# SHUTTLE
+- type: constructionGraph
+  id: StellarWindowShuttle
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: StellarWindowFrameShuttle
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: Steel
+              amount: 1
+              doAfter: 1
+
+    - node: StellarWindowFrameShuttle
+      entity: StellarWindowFrameShuttle
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 1
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Prying
+              doAfter: 1
+        - to: StellarWindowShuttle
+          steps:
+            - material: Glass
+              amount: 1
+              doAfter: 1
+
+    - node: StellarWindowShuttle
+      entity: StellarWindowShuttle
+      edges:
+        - to: StellarWindowFrameShuttle
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetGlass1
+              amount: 1

@@ -1,0 +1,90 @@
+######################## METAL
+- type: entity
+  parent: StellarHalfwallGrey
+  id: StellarRailing
+  name: railing
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing
+  - type: Icon
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing
+  - type: Construction
+    node: railing
+
+- type: entity
+  parent: StellarHalfwallGreyTurn
+  id: StellarRailingTurn
+  name: railing turn
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing-turn
+  - type: Icon
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing-turn
+  - type: Construction
+    node: railing
+
+- type: entity
+  parent: StellarHalfwallGreySurround
+  id: StellarRailingSurround
+  name: railing surround
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing-surround
+  - type: Icon
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing-surround
+  - type: Construction
+    node: railing
+
+- type: entity
+  parent: StellarHalfwallGreyCorner
+  id: StellarRailingCornerUp
+  name: railing corner up
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing-corner-up
+  - type: Icon
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing-corner-up
+  - type: Construction
+    node: railing
+
+- type: entity
+  parent: StellarHalfwallGreyCorner
+  id: StellarRailingCornerDown
+  name: railing corner down
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing-corner-down
+  - type: Icon
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing-corner-down
+  - type: Construction
+    node: railing
+
+- type: entity
+  parent: StellarHalfwallGreyCorner
+  id: StellarRailingCapVertical
+  name: railing endcap vertical
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing-cap-vertical
+  - type: Icon
+    sprite: _ST/Tileset/Walls/railings.rsi
+    state: railing-cap-vertical
+  - type: Construction
+    node: railing

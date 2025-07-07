@@ -211,6 +211,10 @@
     - DoorBumpOpener
     - AnomalyHost
   - type: CosmicCenserTarget # Stellar - Cosmic Cult
+  - type: Dropshadow # Begin Stellar - Wallening
+    sprite: _ST/Effects/dropshadow.rsi
+    state: shadow-medium
+    offset: 0, -0.5 # End Stellar - Wallening
 
 - type: entity
   save: false

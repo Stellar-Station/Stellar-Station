@@ -9,11 +9,19 @@
     - type: InteractionOutline
     - type: Transform
       noRot: true
+    - type: Dropshadow # Begin Stellar - Wallening
+      sprite: _ST/Effects/dropshadow.rsi
+      state: shadow-large
+      offset: 0, -0.35
     - type: Sprite
-      sprite: Structures/Storage/canister.rsi
+      drawdepth: Walls
+      offset: 0, 0.1
+      sprite: _ST/Tileset/Atmos/canisters.rsi
       noRot: true
       layers:
-        - state: grey
+        - state: canister-airmix
+        - state: display-a
+          shader: unshaded # End Stellar - Wallening
     - type: Appearance
     - type: GenericVisualizer
       visuals:
@@ -120,7 +128,9 @@
   components:
     - type: Sprite
       layers:
-        - state: yellow
+      - state: canister-storage # Stellar
+      - state: display-s # Stellar
+        shader: unshaded # Stellar
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -169,7 +179,9 @@
   components:
   - type: Sprite
     layers:
-      - state: grey
+      - state: canister-airmix # Stellar
+      - state: display-a # Stellar
+        shader: unshaded # Stellar
   - type: GasCanister
     gasMixture:
       volume: 1500
@@ -209,7 +221,9 @@
   components:
   - type: Sprite
     layers:
-      - state: blue
+      - state: canister-oxygen # Stellar
+      - state: display-o # Stellar
+        shader: unshaded # Stellar
   - type: GasCanister
     gasMixture:
       volume: 1500
@@ -263,7 +277,9 @@
   components:
     - type: Sprite
       layers:
-        - state: red
+      - state: canister-nitrogen # Stellar
+      - state: display-n # Stellar
+        shader: unshaded # Stellar
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -319,7 +335,9 @@
   components:
     - type: Sprite
       layers:
-        - state: black
+      - state: canister-oxide # Stellar
+      - state: display-c # Stellar
+        shader: unshaded # Stellar
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -379,7 +397,9 @@
   components:
     - type: Sprite
       layers:
-        - state: orange
+      - state: canister-plasma # Stellar
+      - state: display-p # Stellar
+        shader: unshaded # Stellar
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -423,7 +443,9 @@
   components:
     - type: Sprite
       layers:
-        - state: green
+      - state: canister-tritium # Stellar
+      - state: display-t # Stellar
+        shader: unshaded # Stellar
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -468,7 +490,9 @@
   components:
     - type: Sprite
       layers:
-        - state: water_vapor
+      - state: canister-watervapor # Stellar
+      - state: display-w # Stellar
+        shader: unshaded # Stellar
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -512,7 +536,9 @@
   components:
     - type: Sprite
       layers:
-        - state: greenys
+      - state: canister-ammonia # Stellar
+      - state: display-a # Stellar
+        shader: unshaded # Stellar
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -559,7 +585,9 @@
   components:
     - type: Sprite
       layers:
-        - state: redws
+      - state: canister-oxide # Stellar
+      - state: display-n # Stellar
+        shader: unshaded # Stellar
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -607,7 +635,9 @@
   components:
   - type: Sprite
     layers:
-    - state: frezon
+    - state: canister-frezon # Stellar
+    - state: display-f # Stellar
+      shader: unshaded # Stellar
   - type: GasCanister
     gasMixture:
       volume: 1500
@@ -683,8 +713,8 @@
       damageModifierSet: Metallic
     - type: InteractionOutline
     - type: Sprite
-      sprite: Structures/Storage/canister.rsi
-      state: grey-1
+      sprite: _ST/Tileset/Atmos/canisters.rsi # Stellar
+      state: canister-airmix-broken
     - type: Physics
       bodyType: Dynamic
     - type: Fixtures
@@ -710,7 +740,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: yellow-1
+      state: canister-storage-broken # Stellar
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -718,7 +748,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: grey-1
+    state: canister-airmix-broken # Stellar
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -726,7 +756,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: blue-1
+    state: canister-oxygen-broken # Stellar
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -734,7 +764,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: red-1
+      state: canister-nitrogen-broken # Stellar
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -742,7 +772,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: black-1
+      state: canister-oxide-broken # Stellar
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -750,7 +780,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: orange-1
+      state: canister-plasma-broken # Stellar
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -758,7 +788,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: green-1
+      state: canister-tritium-broken # Stellar
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -767,7 +797,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: water_vapor-1
+      state: canister-watervapor-broken # Stellar
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -775,7 +805,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: greenys-1
+      state: canister-ammonia-broken # Stellar
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -783,7 +813,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: redws-1
+      state: canister-oxide-broken # Stellar
 
 - type: entity
   parent: GasCanisterBrokenBase
@@ -791,4 +821,4 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: frezon-1
+    state: canister-frezon-broken # Stellar

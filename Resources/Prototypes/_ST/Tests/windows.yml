@@ -59,6 +59,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
+  - type: InteractionOutline
   - type: Icon
     state: full
   - type: IconSmooth
@@ -78,6 +79,13 @@
         - HalfWallLayer
   - type: Appearance
   - type: Climbable
+    climbDelay: 1 # It's easy to vault into
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 1
+    sprintSpeedModifier: 0.7 # But it's difficult to sprint while clambering through a window frame.
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.1
 
 ############## WINDOW FRAME
 - type: entity
@@ -88,7 +96,6 @@
   components:
   - type: Sprite
     sprite: _ST/Tileset/Windows/window_frame.rsi
-  - type: SpriteFade
   - type: Icon
     sprite: _ST/Tileset/Windows/window_frame.rsi
   - type: Damageable
@@ -112,6 +119,21 @@
   - type: Construction
     graph: StellarWindow
     node: StellarWindowFrameSteel
+
+############## WINDOW FRAME SHUTTLE
+- type: entity
+  id: StellarWindowFrameShuttle
+  name: steel window frame
+  parent:
+  - StellarBaseWindowFrame
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/window_frame_shuttle.rsi
+  - type: Icon
+    sprite: _ST/Tileset/Windows/window_frame_shuttle.rsi
+  - type: Construction
+    graph: StellarWindowShuttle
+    node: StellarWindowFrameShuttle
 
 ############## WINDOW GLASS
 - type: entity
@@ -280,7 +302,7 @@
   - type: Construction
     graph: StellarWindow
     node: StellarWindowUranium
-############## WINDOW PLASMA # REINFORCED
+############## WINDOW URANIUM # REINFORCED
 - type: entity
   id: StellarWindowUraniumReinforced
   parent:
@@ -313,3 +335,37 @@
   - type: Construction
     graph: StellarWindow
     node: StellarWindowUraniumReinforced
+
+############## WINDOW SHUTTLE
+- type: entity
+  id: StellarWindowShuttle
+  parent:
+  - StellarWindowBase
+  name: shuttle window
+  description: A shuttle wall with a window in it.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/window_shuttle_framed.rsi
+  - type: Icon
+    sprite: _ST/Tileset/Windows/window_shuttle_framed.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlass:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:ChangeConstructionNodeBehavior
+        node: StellarWindowFrameShuttle
+  - type: Construction
+    graph: StellarWindowShuttle
+    node: StellarWindowShuttle
