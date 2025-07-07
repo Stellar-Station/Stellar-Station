@@ -79,7 +79,7 @@
         - HalfWallLayer
   - type: Appearance
   - type: Climbable
-    climbDelay: 1 # It's easy to vault into
+    delay: 1 # It's easy to vault into
   - type: SpeedModifierContacts
     walkSpeedModifier: 1
     sprintSpeedModifier: 0.7 # But it's difficult to sprint while clambering through a window frame.
