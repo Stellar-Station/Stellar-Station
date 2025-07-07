@@ -219,8 +219,9 @@
       - SetParticleZeta
       - SetParticleSigma
   - type: Dropshadow # Begin Stellar - Wallening
-    sprite: _ST/Effects/dropshadow.rsi
-    state: shadow-ape
+    sprite:
+      sprite: _ST/Effects/dropshadow.rsi
+      state: shadow-ape
     offset: 0, -0.37 # End Stellar - Wallening
 
 - type: entity

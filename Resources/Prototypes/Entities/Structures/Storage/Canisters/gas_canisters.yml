@@ -10,8 +10,9 @@
     - type: Transform
       noRot: true
     - type: Dropshadow # Begin Stellar - Wallening
-      sprite: _ST/Effects/dropshadow.rsi
-      state: shadow-large
+      sprite:
+        sprite: _ST/Effects/dropshadow.rsi
+        state: shadow-large
       offset: 0, -0.35
     - type: Sprite
       drawdepth: Walls

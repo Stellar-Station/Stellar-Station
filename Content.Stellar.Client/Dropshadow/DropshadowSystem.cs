@@ -1,9 +1,6 @@
-using Robust.Client.GameObjects;
-using Content.Stellar.Shared.Dropshadow.Components;
-using Robust.Shared.Utility;
 using Content.Stellar.Shared.Dropshadow;
-using Content.Shared.Buckle.Components;
-using Content.Shared.Standing;
+using Robust.Client.GameObjects;
+using Robust.Shared.Utility;
 
 namespace Content.Stellar.Client.Dropshadow;
 
@@ -20,30 +17,25 @@ public sealed partial class DropshadowSystem : SharedDropshadowSystem
         SubscribeLocalEvent<DropshadowComponent, ComponentShutdown>(OnDropshadowRemoved);
 
         SubscribeLocalEvent<DropshadowComponent, AppearanceChangeEvent>(OnAppearanceChanged);
-
-        SubscribeLocalEvent<DropshadowComponent, BuckledEvent>(OnBuckled);
-        SubscribeLocalEvent<DropshadowComponent, UnbuckledEvent>(OnUnbuckled);
-        SubscribeLocalEvent<DropshadowComponent, DownedEvent>(OnDowned);
-        SubscribeLocalEvent<DropshadowComponent, StoodEvent>(OnStood);
     }
 
     private void OnDropshadowAdded(Entity<DropshadowComponent> ent, ref ComponentStartup args)
     {
-        if (!TryComp<SpriteComponent>(ent, out var sprite) || _sprite.LayerMapTryGet((ent, sprite), DropshadowKey.Key, out _, false))
+        if (!TryComp<SpriteComponent>(ent, out var sprite))
             return;
 
-        var newSprite = new SpriteSpecifier.Rsi(new(ent.Comp.Sprite), ent.Comp.State);
-        var layer = _sprite.AddLayer((ent, sprite), newSprite, 0);
-        _sprite.LayerMapSet((ent, sprite), DropshadowKey.Key, layer);
-        _sprite.LayerSetOffset((ent, sprite), layer, ent.Comp.Offset);
-        sprite.LayerSetShader(layer, "unshaded");
+        var layer = _sprite.AddLayer((ent, sprite), ent.Comp.Sprite, 0);
+        _sprite.LayerMapSet((ent, sprite), DropshadowLayers.Shadow, layer);
+        _sprite.LayerSetOffset((ent, sprite), DropshadowLayers.Shadow, ent.Comp.Offset);
+        sprite.LayerSetShader(DropshadowLayers.Shadow, "unshaded");
     }
 
     private void OnDropshadowRemoved(Entity<DropshadowComponent> ent, ref ComponentShutdown args)
     {
         if (!TryComp<SpriteComponent>(ent, out var sprite))
             return;
-        _sprite.RemoveLayer((ent, sprite), DropshadowKey.Key, false);
+
+        _sprite.RemoveLayer((ent, sprite), DropshadowLayers.Shadow, false);
     }
 
     private void OnAppearanceChanged(Entity<DropshadowComponent> ent, ref AppearanceChangeEvent args)
@@ -51,36 +43,7 @@ public sealed partial class DropshadowSystem : SharedDropshadowSystem
         if (args.Sprite == null)
             return;
 
-        _sprite.LayerSetVisible((ent, args.Sprite), DropshadowKey.Key, ent.Comp.Visible);
-        Dirty(ent);
+        if (_appearance.TryGetData<bool>(ent, DropshadowVisuals.Visible, out var visible, args.Component))
+            _sprite.LayerSetVisible((ent, args.Sprite), DropshadowLayers.Shadow, visible);
     }
-
-    private void OnBuckled(Entity<DropshadowComponent> ent, ref BuckledEvent args)
-    {
-        ent.Comp.Visible = false;
-        Dirty(ent);
-        _appearance.SetData(ent, DropshadowKey.Key, false);
-    }
-
-    private void OnUnbuckled(Entity<DropshadowComponent> ent, ref UnbuckledEvent args)
-    {
-        ent.Comp.Visible = true;
-        Dirty(ent);
-        _appearance.SetData(ent, DropshadowKey.Key, true);
-    }
-
-    private void OnDowned(Entity<DropshadowComponent> ent, ref DownedEvent args)
-    {
-        ent.Comp.Visible = false;
-        Dirty(ent);
-        _appearance.SetData(ent, DropshadowKey.Key, false);
-    }
-
-    private void OnStood(Entity<DropshadowComponent> ent, ref StoodEvent args)
-    {
-        ent.Comp.Visible = true;
-        Dirty(ent);
-        _appearance.SetData(ent, DropshadowKey.Key, true);
-    }
-
 }
