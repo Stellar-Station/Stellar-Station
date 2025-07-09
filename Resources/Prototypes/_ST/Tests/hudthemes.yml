@@ -1,0 +1,109 @@
+- type: uiTheme
+  id: STDefaultTheme
+  path: /Textures/_ST/Interface/Stellar/
+  colors:
+    whiteText: "#FFF5EE"
+    slotSelectedGold: "#e6b812"
+    slotColor: "#0f1215"
+    slotOutline: "#333850"
+    slotText: "#333850"
+    nanoGold: "#A88B5E"
+    goodGreenFore: "#318461"
+    concerningOrangeFore: "#A5762F"
+    dangerousRedFore: "#bb3254"
+    disabledFore: "#5A5A5A"
+    _itemstatus_content_margin_right: "#06060604"
+    _itemstatus_content_margin_left: "#06060604"
+    _itemstatus_patch_margin: "#07060404"
+
+- type: uiTheme
+  id: STCasetteTheme
+  path: /Textures/_ST/Interface/Casette/
+  colors:
+    whiteText: "#FFF5EE"
+    slotSelectedGold: "#e6b812"
+    slotColor: "#0f1215"
+    slotOutline: "#333850"
+    slotText: "#333850"
+    nanoGold: "#A88B5E"
+    goodGreenFore: "#318461"
+    concerningOrangeFore: "#A5762F"
+    dangerousRedFore: "#bb3254"
+    disabledFore: "#5A5A5A"
+    _itemstatus_content_margin_right: "#06060604"
+    _itemstatus_content_margin_left: "#06060604"
+    _itemstatus_patch_margin: "#07060404"
+
+- type: uiTheme
+  id: STMalignTheme
+  path: /Textures/_ST/Interface/Malign/
+  colors:
+    whiteText: "#FFF5EE"
+    slotSelectedGold: "#e6b812"
+    slotColor: "#0f1215"
+    slotOutline: "#333850"
+    slotText: "#333850"
+    nanoGold: "#A88B5E"
+    goodGreenFore: "#318461"
+    concerningOrangeFore: "#A5762F"
+    dangerousRedFore: "#bb3254"
+    disabledFore: "#5A5A5A"
+    _itemstatus_content_margin_right: "#06060604"
+    _itemstatus_content_margin_left: "#06060604"
+    _itemstatus_patch_margin: "#07060404"
+
+- type: uiTheme
+  id: STAmoledTheme
+  path: /Textures/_ST/Interface/Amoled/
+  colors:
+    whiteText: "#FFF5EE"
+    slotSelectedGold: "#e6b812"
+    slotColor: "#0f1215"
+    slotOutline: "#333850"
+    slotText: "#333850"
+    nanoGold: "#A88B5E"
+    goodGreenFore: "#318461"
+    concerningOrangeFore: "#A5762F"
+    dangerousRedFore: "#bb3254"
+    disabledFore: "#5A5A5A"
+    _itemstatus_content_margin_right: "#06060604"
+    _itemstatus_content_margin_left: "#06060604"
+    _itemstatus_patch_margin: "#07060404"
+
+# Stellar HUDs
+- type: hudTheme
+  id: STDefaultTheme
+  name: ui-options-hud-theme-stellar
+  path: Stellar
+  order: -1
+
+- type: hudTheme
+  id: STCasetteTheme
+  name: ui-options-hud-theme-stellar-casette
+  path: Casette
+  order: 0
+
+- type: hudTheme
+  id: STMalignTheme
+  name: ui-options-hud-theme-stellar-malign
+  path: Malign
+  order: 1
+
+- type: hudTheme
+  id: STAmoledTheme
+  name: ui-options-hud-theme-stellar-amoled
+  path: Amoled
+  order: 5
+
+# Wizden HUDs
+- type: hudTheme
+  id: SS14DefaultTheme
+  name: ui-options-hud-theme-wizden
+  path: Default
+  order: 98
+
+- type: hudTheme
+  id: SS14MinimalistTheme
+  name: ui-options-hud-theme-wizden-minimalist
+  path: Minimalist
+  order: 99
