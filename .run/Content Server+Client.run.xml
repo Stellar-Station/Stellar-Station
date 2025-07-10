@@ -2,6 +2,9 @@
   <configuration default="false" name="Content Server+Client" type="CompoundRunConfigurationType">
     <toRun name="Content.Client" type="DotNetProject" />
     <toRun name="Content.Server" type="DotNetProject" />
-    <method v="2" />
+    <method v="2">
+      <option name="Build" default="true" projectName="Content.Stellar.Client" projectPath="$PROJECT_DIR$/Content.Stellar.Client/Content.Stellar.Client.csproj" />
+      <option name="Build" default="true" projectName="Content.Stellar.Server" projectPath="$PROJECT_DIR$/Content.Stellar.Server/Content.Stellar.Server.csproj" />
+    </method>
   </configuration>
 </component>
