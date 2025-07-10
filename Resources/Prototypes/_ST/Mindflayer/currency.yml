@@ -1,0 +1,4 @@
+- type: currency
+  id: RecoveredMind
+  displayName: store-currency-display-recovered-mind
+  canWithdraw: false

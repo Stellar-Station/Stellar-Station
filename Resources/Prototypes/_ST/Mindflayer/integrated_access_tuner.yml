@@ -1,0 +1,24 @@
+- type: entity
+  parent: BaseItem
+  id: IntegratedAccessTuner
+  name: integrated access tuner
+  description: Allows us to hack any panel remotely.
+  components:
+  - type: Sprite
+    sprite: _ST/Mindflayer/integrated_access_tuner.rsi
+    layers:
+    - state: icon
+  - type: Tag
+    tags:
+    - Multitool
+    - DoorElectronicsConfigurator
+  - type: GuideHelp
+    guides:
+    - WirePanels
+    - Airlocks
+    - InspectingPower
+  - type: Tool
+    qualities:
+    - Pulsing
+    - Cutting
+  - type: RemoteWiresHacker

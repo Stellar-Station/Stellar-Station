@@ -1,0 +1,163 @@
+# Actions
+- type: entity
+  id: ActionMindFlayerOpenShop
+  name: Self-Augment Operations
+  description: Choose how we will upgrade ourselves
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    icon:
+      sprite: _ST/Mindflayer/actions.rsi
+      state: choose_module
+  - type: InstantAction
+    event: !type:MindflayerShopActionEvent
+
+- type: entity
+  id: ActionMindFlayerSwarmprod
+  name: Swarmprod
+  description: We shape our arm into an extended mass of sparking nanites
+  components:
+  - type: Action
+    raiseOnAction: true
+    itemIconStyle: BigAction
+    icon:
+      sprite: _ST/Mindflayer/actions.rsi
+      state: swarmprod
+  - type: InstantAction
+    event: !type:OnRetractableItemActionEvent
+  - type: RetractableItemAction
+    spawnedPrototype: Swarmprod
+
+- type: entity
+  id: ActionMindFlayerQuickReboot
+  name: Quick Reboot
+  description: Heal and remove any incapacitating effects from ourselves
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    icon:
+      sprite: _ST/Mindflayer/actions.rsi
+      state: quick_reboot
+  - type: InstantAction
+    event: !type:MindflayerAddSolutionToBloodstreamEvent
+      solution:
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 10
+
+- type: entity
+  id: ActionMindFlayerSiphonMind
+  name: Siphon Mind
+  description: Draw Mind from others so that we may use it
+  components:
+  - type: Action
+    useDelay: 50
+    itemIconStyle: NoItem
+    icon:
+      sprite: _ST/CosmicCult/Icons/cosmiccult_abilities.rsi
+      state: siphon
+  - type: TargetAction
+  - type: EntityTargetAction
+    whitelist:
+      components:
+      - HumanoidAppearance
+    event: !type:MindflayerSiphonMindActionEvent
+
+- type: entity
+  id: ActionMindFlayerCamfectingBug
+  name: Camfecting Bug
+  description: We hack a camera such that we may see from it
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    useDelay: 50
+    icon:
+      sprite: _ST/Mindflayer/actions.rsi
+      state: camera_bug
+  - type: TargetAction
+  - type: EntityTargetAction
+    whitelist:
+      tags:
+      - SurveillanceCamera
+    event: !type:MindflayerCamfectingBugEvent
+
+- type: entity
+  id: ActionMindFlayerViewCameras
+  name: View Cameras
+  description: See from a camera that we have hacked
+  components:
+  - type: Action
+    icon:
+      sprite: _ST/Mindflayer/actions.rsi
+      state: camera_bug
+  - type: InstantAction
+    event: !type:MindflayerOpenHackedCamerasEvent
+
+- type: entity
+  id: ActionMindFlayerTraceroute
+  name: Traceroute
+  description: Allows us to record a computer's address. We can then use another computer to recall ourselves to it.
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    useDelay: 60
+    icon:
+      sprite: _ST/Mindflayer/actions.rsi
+      state: pd_cablehop
+    backgroundOn:
+      sprite: _ST/Mindflayer/actions.rsi
+      state: bg_flayer
+  - type: TargetAction
+  - type: EntityTargetAction
+    whitelist:
+      components:
+      - MindflayerTraceRouteTarget
+    event: !type:MindflayerTraceRouteActionEvent
+
+- type: entity
+  id: ActionMindFlayerFacsimile
+  name: Facsimile
+  description: Allows us to rearrange our surface to resemble something we see.
+  components:
+  - type: Action
+    raiseOnAction: true
+    itemIconStyle: BigAction
+    icon:
+      sprite: _ST/Mindflayer/actions.rsi
+      state: genetic_poly
+  - type: InstantAction
+    event: !type:OnRetractableItemActionEvent
+  - type: RetractableItemAction
+    spawnedPrototype: MindflayerChameleonProjector
+
+- type: entity
+  id: ActionMindFlayerDestructiveInterference
+  name: Destructive Interference
+  description: Allows us to toggle a radio jamming signal.
+  components:
+  - type: Action
+    raiseOnAction: true
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Devices/jammer.rsi
+      state: jammer
+  - type: InstantAction
+    event: !type:OnRetractableItemActionEvent
+  - type: RetractableItemAction
+    spawnedPrototype: MindflayerRadioJammer
+
+- type: entity
+  id: ActionMindFlayerIntegratedAccessTuner
+  name: Integrated Access Tuner
+  description: Allows us to hack any panel remotely.
+  components:
+  - type: Action
+    raiseOnAction: true
+    itemIconStyle: BigAction
+    icon:
+      sprite: _ST/Mindflayer/integrated_access_tuner.rsi
+      state: icon
+  - type: InstantAction
+    event: !type:OnRetractableItemActionEvent
+  - type: RetractableItemAction
+    spawnedPrototype: IntegratedAccessTuner

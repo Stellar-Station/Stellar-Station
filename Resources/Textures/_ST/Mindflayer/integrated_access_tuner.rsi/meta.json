@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "inhand-left from https://github.com/ParadiseSS13/Paradise/blob/505faec7261e4d71a68d677f36d91cc1631fc685/icons/mob/inhands/items_lefthand.dmi, inhand-right from https://github.com/ParadiseSS13/Paradise/blob/505faec7261e4d71a68d677f36d91cc1631fc685/icons/mob/inhands/items_righthand.dmi, icon from https://github.com/ParadiseSS13/Paradise/blob/505faec7261e4d71a68d677f36d91cc1631fc685/icons/obj/device.dmi",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        }
+    ]
+}

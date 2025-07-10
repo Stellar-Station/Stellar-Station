@@ -1,0 +1,34 @@
+- type: entity
+  parent: MobMoth
+  id: MobMindflayer
+  components:
+  - type: Mindflayer
+    siphonQuantity: 100
+  - type: ActionGrant
+    actions:
+    - ActionMindFlayerSiphonMind
+    - ActionMindFlayerOpenShop
+    - ActionMindFlayerSwarmprod
+    - ActionMindFlayerQuickReboot
+  - type: UserInterface
+    interfaces:
+      enum.VoiceMaskUIKey.Key:
+        type: VoiceMaskBoundUserInterface
+      enum.HumanoidMarkingModifierKey.Key:
+        type: HumanoidMarkingModifierBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+      enum.CamfectingBugUiKey.Key:
+        type: CamfectingBugBoundUserInterface
+  - type: Store
+    categories:
+    - MindflayerPassive
+    - MindflayerIntruder
+    - MindflayerDestroyer
+    currencyWhitelist:
+    - RecoveredMind
+    balance:
+      RecoveredMind: 0
+    grantActionsToMind: false

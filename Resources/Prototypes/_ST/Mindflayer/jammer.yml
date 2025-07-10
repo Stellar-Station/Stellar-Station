@@ -1,0 +1,27 @@
+- type: entity
+  parent: RadioJammer
+  id: MindflayerRadioJammer
+  name: destructive interference generator
+  description: Our nanites, arranged in a swarm that can disrupt nearby signals.
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMicroreactor
+        disableEject: true
+        swap: false
+  - type: RadioJammer
+    settings:
+    - wattage: 12
+      range: 2.5
+      message: radio-jammer-component-set-message-low
+      name: radio-jammer-component-setting-low
+    - wattage: 14
+      range: 6
+      message: radio-jammer-component-set-message-medium
+      name: radio-jammer-component-setting-medium
+    - wattage: 16
+      range: 12
+      message: radio-jammer-component-set-message-high
+      name: radio-jammer-component-setting-high
