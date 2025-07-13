@@ -50,6 +50,15 @@
                 "Client"
             ],
             "preLaunchTask": "build"
+        },
+        {
+            "name": "Server/Client 2x",
+            "configurations": [
+                "Server",
+                "Client",
+                "Client"
+            ],
+            "preLaunchTask": "build"
         }
     ]
 }

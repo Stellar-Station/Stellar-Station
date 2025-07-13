@@ -10,9 +10,10 @@
     tags:
       - Wall
   - type: Sprite
-    sprite: _ST/CosmicCult/Tileset/cosmicwall.rsi
+    sprite: _ST/Tileset/Walls/malign.rsi
   - type: Icon
-    sprite: _ST/CosmicCult/Tileset/cosmicwall.rsi
+    sprite: _ST/Tileset/Walls/malign.rsi
+  - type: SpriteFade
   - type: Destructible
     thresholds:
     - trigger:
@@ -22,34 +23,9 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    # mode: CardinalFlags
     key: cultwalls
-    base: cult
-
-- type: entity
-  parent: WallCosmicCult
-  id: WallCosmicCultTrimmed
-  name: malign wall
-  suffix: Trimmed
-  components:
-  - type: Icon
-    sprite: _ST/CosmicCult/Tileset/cosmicwall.rsi
-    state: full
-  - type: Sprite
-    sprite: _ST/CosmicCult/Tileset/cosmicwall.rsi
-    layers:
-      - state: full
-      - map: [ "enum.EdgeLayer.South" ]
-        state: trim_south
-      - map: [ "enum.EdgeLayer.East" ]
-        state: trim_east
-      - map: [ "enum.EdgeLayer.North" ]
-        state: trim_north
-      - map: [ "enum.EdgeLayer.West" ]
-        state: trim_west
-  - type: IconSmooth
-    key: cultwalls
-    base: cult
-  - type: SmoothEdge
+    base: wall
 
 - type: entity
   id: WindowCosmicCult
@@ -57,6 +33,7 @@
   description: An odd-looking window. Something about it unnerves you.
   parent: WindowRCDResistant
   components:
+  - type: SpriteFade
   - type: Sprite
     drawdepth: WallTops
     sprite: _ST/CosmicCult/Tileset/cosmicwindow.rsi

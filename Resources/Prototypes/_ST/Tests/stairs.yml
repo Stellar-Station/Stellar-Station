@@ -8,7 +8,6 @@
   components:
   - type: Clickable
   - type: Sprite
-    sprite: _ST/Tileset/Decor/Misc/stairs.rsi
     drawdepth: FloorTiles
   - type: IconSmooth
     key: StellarStairs
@@ -69,4 +68,37 @@
   name: stairs grey
   components:
   - type: Sprite
+    sprite: _ST/Tileset/Decor/Misc/stairs_grey.rsi
     state: full
+
+- type: entity
+  id: StellarStairsDark
+  parent: StellarStairsBase
+  name: stairs dark
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Decor/Misc/stairs_dark.rsi
+    state: full
+
+- type: entity
+  id: StellarStairsWhite
+  parent: StellarStairsBase
+  name: stairs white
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Decor/Misc/stairs_white.rsi
+    state: full
+
+- type: entity
+  id: StellarStairsWood
+  parent: StellarStairsBase
+  name: stairs wooden
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Decor/Misc/stairs_wood.rsi
+    state: full
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepWood
+      params:
+        volume: 8

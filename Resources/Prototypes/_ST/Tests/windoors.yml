@@ -1,0 +1,67 @@
+- type: entity
+  id: StellarWindoor
+  parent: BaseWindoor
+  name: directional glass windoor
+  description: A glass service door for installation on tables or countertops.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Doors/Windoors/windoor_glass.rsi
+    layers:
+    - state: secure_underlay
+    - state: closed
+      map: [ "enum.DoorVisualLayers.Base" ]
+    - state: closed_unlit
+      shader: unshaded
+      map: [ "enum.DoorVisualLayers.BaseUnlit" ]
+      visible: false
+    - state: welded
+      map: [ "enum.WeldableLayers.BaseWelded" ]
+    - state: bolted_unlit
+      shader: unshaded
+      map: [ "enum.DoorVisualLayers.BaseBolted" ]
+    - state: emergency_unlit
+      shader: unshaded
+      map: [ "enum.DoorVisualLayers.BaseEmergencyAccess" ]
+    - state: panel_open
+      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      visible: false
+    - state: electrified_ai
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.HUD" ]
+    - state: electrified
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.Sparks" ]
+  - type: Damageable
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlass:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 350
+
+- type: entity
+  id: StellarWindoorReinforced
+  parent: StellarWindoor
+  name: reinforced directional glass windoor
+  description: A glass service door for installation on tables or countertops. This one's a bit tougher.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Doors/Windoors/windoor_glass_reinf.rsi

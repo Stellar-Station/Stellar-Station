@@ -1,6 +1,5 @@
 using Content.Stellar.Shared.Dropshadow;
 using Robust.Client.GameObjects;
-using Robust.Shared.Utility;
 
 namespace Content.Stellar.Client.Dropshadow;
 

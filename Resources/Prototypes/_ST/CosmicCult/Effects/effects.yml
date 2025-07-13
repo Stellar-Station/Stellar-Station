@@ -6,6 +6,7 @@
     - type: WeaponArcVisuals
       fadeOut: false
     - type: Sprite
+      drawdepth: Effects
       layers:
       - sprite: _ST/CosmicCult/Effects/weaponarcs.rsi
         state: arc_cosmic
@@ -43,12 +44,12 @@
   - type: Transform
     anchored: true
   - type: Sprite
+    drawdepth: Effects
     snapCardinals: true
     layers:
     - sprite: _ST/CosmicCult/Effects/tile_spawn.rsi
       state: floorglow
       shader: unshaded
-    drawdepth: Mobs
   - type: Tag
     tags:
     - HideContextMenu
@@ -64,7 +65,7 @@
     anchored: false
   - type: Sprite
     netsync: false
-    drawdepth: Mobs
+    drawdepth: Effects
     shader: unshaded
   - type: Tag
     tags:

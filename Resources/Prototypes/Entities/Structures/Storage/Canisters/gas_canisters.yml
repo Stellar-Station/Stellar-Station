@@ -15,7 +15,7 @@
         state: shadow-large
       offset: 0, -0.35
     - type: Sprite
-      drawdepth: Walls
+      drawdepth: Mobs # Stellar - Wallening
       offset: 0, 0.1
       sprite: _ST/Tileset/Atmos/canisters.rsi
       noRot: true

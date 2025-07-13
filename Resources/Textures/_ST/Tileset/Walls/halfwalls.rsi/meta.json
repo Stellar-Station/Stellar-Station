@@ -54,6 +54,22 @@
     {
         "name": "halfwall-white-surround",
         "directions": 4
+    },
+    {
+        "name": "halfwall-wood",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-wood-turn",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-wood-corner",
+        "directions": 4
+    },
+    {
+        "name": "halfwall-wood-surround",
+        "directions": 4
     }
   ]
 }

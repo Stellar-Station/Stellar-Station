@@ -1,0 +1,128 @@
+## BASES
+- type: entity
+  id: StellarWindowDirectionalBase
+  abstract: true
+  parent: BaseStructure
+  name: directional window
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: WallMount
+    arc: 360
+  - type: Tag
+    tags:
+      - Window
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmack
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _ST/Tileset/Windows/Directional/window_glass_directional.rsi
+    state: window0
+  - type: Icon
+    sprite: _ST/Tileset/Windows/Directional/window_glass_directional.rsi
+    state: full
+  - type: IconSmooth
+    key: StellarDirWindows
+    base: window
+    mode: CardinalFlags
+  - type: InteractionPopup
+    interactSuccessString: comp-window-knock
+    messagePerceivedByOthers: comp-window-knock
+    interactSuccessSound:
+      path: /Audio/Effects/glass_knock.ogg
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,-0.28125"
+        density: 1500
+        mask:
+        - FullTileMask
+        layer:
+        - GlassLayer
+  - type: Repairable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: ExaminableDamage
+    messages: WindowMessages
+  - type: RCDDeconstructable
+    cost: 4
+    delay: 2
+    fx: EffectRCDDeconstruct2
+  - type: Airtight
+    noAirWhenFullyAirBlocked: false
+    airBlockedDirection:
+    - South
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlass:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Construction
+    graph: WindowDirectional
+    node: windowDirectional
+  - type: Appearance
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: Structures/Windows/cracks_directional.rsi
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: StellarWindowDirectionalBase
+  id: StellarWindowDirectionalGlass
+  name: directional glass window
+  description: A steel wall panel with a glass window in it.
+  components:
+  - type: SpriteFade
+
+- type: entity
+  parent: StellarWindowDirectionalBase
+  id: StellarWindowDirectionalGlassReinforced
+  name: directional reinforced glass window
+  description: A steel wall panel with a reinforced glass window in it.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_glass_directional_reinf.rsi
+
+- type: entity
+  parent: StellarWindowDirectionalBase
+  id: StellarWindowDirectionalHalfGlass
+  name: directional glass half window
+  description: A half-size steel wall panel with a glass window in it.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_glass_directional_half.rsi
+  - type: IconSmooth
+    key: StellarDirHalfWindows
+    base: window
+    mode: CardinalFlags

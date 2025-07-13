@@ -258,3 +258,64 @@
     state: halfwall-white-surround
   - type: Construction
     node: railing
+
+######################## WOOD
+- type: entity
+  parent: StellarHalfwallGrey
+  id: StellarHalfwallWood
+  name: wooden halfwall
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _ST/Tileset/Walls/halfwalls.rsi
+    state: halfwall-wood
+  - type: Icon
+    sprite: _ST/Tileset/Walls/halfwalls.rsi
+    state: halfwall-wood
+  - type: Construction
+    node: railing
+
+- type: entity
+  parent: StellarHalfwallGreyTurn
+  id: StellarHalfwallWoodTurn
+  name: wooden halfwall turn
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _ST/Tileset/Walls/halfwalls.rsi
+    state: halfwall-wood-turn
+  - type: Icon
+    sprite: _ST/Tileset/Walls/halfwalls.rsi
+    state: halfwall-wood-turn
+  - type: Construction
+    node: railing
+
+- type: entity
+  parent: StellarHalfwallGreyCorner
+  id: StellarHalfwallWoodCorner
+  name: wooden halfwall corner
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _ST/Tileset/Walls/halfwalls.rsi
+    state: halfwall-wood-corner
+  - type: Icon
+    sprite: _ST/Tileset/Walls/halfwalls.rsi
+    state: halfwall-wood-corner
+  - type: Construction
+    node: railing
+
+- type: entity
+  parent: StellarHalfwallGreySurround
+  id: StellarHalfwallWoodSurround
+  name: wooden halfwall surround
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _ST/Tileset/Walls/halfwalls.rsi
+    state: halfwall-wood-surround
+  - type: Icon
+    sprite: _ST/Tileset/Walls/halfwalls.rsi
+    state: halfwall-wood-surround
+  - type: Construction
+    node: railing

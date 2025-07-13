@@ -80,43 +80,43 @@ namespace Content.Shared.DrawDepth
         SmallObjects = DrawDepthTag.Default + 1,
 
         /// <summary>
-        ///     Posters, APCs, air alarms, etc. This also includes most lights & lamps.
-        /// </summary>
-        WallMountedItems = DrawDepthTag.Default + 2,
-
-        /// <summary>
         ///     To use for objects that would usually fall under SmallObjects, but appear taller than 1 tile. For example: Reagent Grinder
         /// </summary>
-        LargeObjects = DrawDepthTag.Default + 3,
+        LargeObjects = DrawDepthTag.Default + 2,
 
         /// <summary>
         ///     Generic items. Things that should be above crates & tables, but underneath mobs.
         /// </summary>
-        Items = DrawDepthTag.Default + 4,
+        Items = DrawDepthTag.Default + 3,
         /// <summary>
         /// Stuff that should be drawn below mobs, but on top of items. Like muzzle flash.
         /// </summary>
-        BelowMobs = DrawDepthTag.Default + 5,
+        BelowMobs = DrawDepthTag.Default + 4,
 
-        Mobs = DrawDepthTag.Default + 6,
+        Mobs = DrawDepthTag.Default + 5,
 
-        OverMobs = DrawDepthTag.Default + 7,
+        OverMobs = DrawDepthTag.Default + 6,
 
-        Doors = DrawDepthTag.Default + 8,
+        Doors = DrawDepthTag.Default + 7,
+
+        // Begin Stellar - These go over mobs
+        Walls = DrawDepthTag.Default + 8,
+
+        /// <summary>
+        ///     Posters, APCs, air alarms, etc. This also includes most lights & lamps.
+        /// </summary>
+        WallMountedItems = DrawDepthTag.Default + 9,
 
         /// <summary>
         /// Blast doors and shutters which go over the usual doors.
         /// </summary>
-        BlastDoors = DrawDepthTag.Default + 9,
-
-        // Begin Stellar - These go over mobs
-        Walls = DrawDepthTag.Default + 6,
+        BlastDoors = DrawDepthTag.Default + 10,
 
         /// <summary>
         ///     Used for windows (grilles use walls) and misc signage. Useful if you want to have an APC in the middle
         ///     of some wall-art or something.
         /// </summary>
-        WallTops = DrawDepthTag.Default + 6,
+        WallTops = DrawDepthTag.Default + 11,
         // End Stellar - These go over mobs
 
         /// <summary>
