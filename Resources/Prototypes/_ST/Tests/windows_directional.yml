@@ -97,6 +97,7 @@
   - type: StaticPrice
     price: 15
 
+# GLASS
 - type: entity
   parent: StellarWindowDirectionalBase
   id: StellarWindowDirectionalGlass
@@ -113,6 +114,10 @@
   components:
   - type: Sprite
     sprite: _ST/Tileset/Windows/Directional/window_glass_directional_reinf.rsi
+  - type: IconSmooth
+    key: StellarDirWindowsReinf
+    base: window
+    mode: CardinalFlags
 
 - type: entity
   parent: StellarWindowDirectionalBase
@@ -126,3 +131,101 @@
     key: StellarDirHalfWindows
     base: window
     mode: CardinalFlags
+
+- type: entity
+  parent: StellarWindowDirectionalHalfGlass
+  id: StellarWindowDirectionalHalfGlassReinforced
+  name: directional reinforced glass half window
+  description: A half-size steel wall panel with a glass window in it.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_glass_directional_reinf_half.rsi
+  - type: IconSmooth
+    key: StellarDirHalfWindowsReinf
+    base: window
+    mode: CardinalFlags
+
+# PLASMA
+- type: entity
+  parent: StellarWindowDirectionalGlass
+  id: StellarWindowDirectionalPlasma
+  name: directional plasma window
+  description: A steel wall panel with a plasma glass window in it.
+  components:
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_plasma_directional.rsi
+
+- type: entity
+  parent: StellarWindowDirectionalGlassReinforced
+  id: StellarWindowDirectionalPlasmaReinforced
+  name: directional reinforced plasma window
+  description: A steel wall panel with a reinforced plasma glass window in it.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_plasma_directional_reinf.rsi
+
+- type: entity
+  parent: StellarWindowDirectionalHalfGlass
+  id: StellarWindowDirectionalHalfPlasma
+  name: directional plasma half window
+  description: A half-size steel wall panel with a plasma glass window in it.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_plasma_directional_half.rsi
+  - type: IconSmooth
+    key: StellarDirHalfWindows
+    base: window
+    mode: CardinalFlags
+
+- type: entity
+  parent: StellarWindowDirectionalHalfGlassReinforced
+  id: StellarWindowDirectionalHalfPlasmaReinforced
+  name: directional reinforced plasma half window
+  description: A half-size steel wall panel with a plasma glass window in it.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_plasma_directional_reinf_half.rsi
+
+
+# URANIUM
+- type: entity
+  parent: StellarWindowDirectionalGlass
+  id: StellarWindowDirectionalUranium
+  name: directional uranium window
+  description: A steel wall panel with a uranium glass window in it.
+  components:
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_uranium_directional.rsi
+
+- type: entity
+  parent: StellarWindowDirectionalGlassReinforced
+  id: StellarWindowDirectionalUraniumReinforced
+  name: directional reinforced uranium window
+  description: A steel wall panel with a reinforced uranium glass window in it.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_uranium_directional_reinf.rsi
+
+- type: entity
+  parent: StellarWindowDirectionalHalfGlass
+  id: StellarWindowDirectionalHalfUranium
+  name: directional uranium half window
+  description: A half-size steel wall panel with a uranium glass window in it.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_uranium_directional_half.rsi
+  - type: IconSmooth
+    key: StellarDirHalfWindows
+    base: window
+    mode: CardinalFlags
+
+- type: entity
+  parent: StellarWindowDirectionalHalfGlassReinforced
+  id: StellarWindowDirectionalHalfUraniumReinforced
+  name: directional reinforced uranium half window
+  description: A half-size steel wall panel with a uranium glass window in it.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Windows/Directional/window_uranium_directional_reinf_half.rsi
