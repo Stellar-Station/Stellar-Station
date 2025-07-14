@@ -35,7 +35,7 @@
   components:
   - type: SpriteFade
   - type: Sprite
-    drawdepth: WallTops
+    drawdepth: Walls
     sprite: _ST/CosmicCult/Tileset/cosmicwindow.rsi
   - type: Icon
     sprite: _ST/CosmicCult/Tileset/cosmicwindow.rsi

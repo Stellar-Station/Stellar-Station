@@ -5,6 +5,7 @@
   description: A container able to harness a scan of an anomaly and turn it into research data.
   components:
   - type: Sprite
+    drawdepth: Mobs # Stellar - Wallening
     noRot: true
     sprite: _ST/Tileset/Science/anomaly_vessel.rsi # Stellar
     layers:
@@ -96,8 +97,8 @@
   components:
   - type: Sprite
     sprite: _ST/Tileset/Science/adv_anomaly_vessel.rsi # Stellar
-    offset: 0,0.5
-    drawdepth: Mobs
+    offset: 0,0.5 # Stellar - Wallening
+    drawdepth: Mobs # Stellar - Wallening
   - type: SpriteFade
   - type: AnomalyVessel
     pointMultiplier: 2
@@ -237,7 +238,7 @@
   - type: Sprite
     sprite: _ST/Tileset/Science/anomaly_generator.rsi # Stellar
     offset: 0, 0.5 # Stellar - Wallening
-    drawdepth: Mobs
+    drawdepth: Walls # Stellar - Wallening
     layers:
     - state: base
     - state: panel

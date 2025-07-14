@@ -23,7 +23,7 @@
     - Wall
   - type: IsRoof
   - type: Sprite
-    drawdepth: Mobs # Stellar - Wallening
+    drawdepth: Walls
   - type: Icon
     state: full
   - type: PlacementReplacement

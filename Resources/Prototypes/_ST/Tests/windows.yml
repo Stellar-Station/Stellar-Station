@@ -5,7 +5,7 @@
   parent: Window
   components:
   - type: Sprite
-    drawdepth: Mobs
+    drawdepth: Walls
   - type: SpriteFade
   - type: Icon
     state: full
@@ -58,7 +58,7 @@
     - Window
   components:
   - type: Sprite
-    drawdepth: Mobs
+    drawdepth: Walls
   - type: InteractionOutline
   - type: Icon
     state: full

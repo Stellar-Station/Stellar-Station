@@ -11,6 +11,11 @@
   - type: CosmicEquipment
   - type: Sprite
     sprite: _ST/CosmicCult/Clothing/cosmiccult_armor.rsi
+    layers:
+    - state: icon
+    - state: icon-light
+      visible: false
+      shader: unshaded
   - type: Item
     size: Huge
   - type: Clothing
@@ -40,7 +45,7 @@
     - Hardsuit
     - WhitelistChameleon
 #Shoulder mounted flashlight
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: light
     clothingVisuals:
       outerClothing:
@@ -51,6 +56,7 @@
     addPrefix: false
     blinkingBehaviourId: blinking
     radiatingBehaviourId: radiating
+  - type: ItemTogglePointLight
   - type: PointLight
     enabled: false
     color: "#42a4ae"
@@ -77,11 +83,11 @@
         maxValue: 2.0
         isLooped: true
   - type: Battery
-    maxCharge: 100
-    startingCharge: 100
+    maxCharge: 600
+    startingCharge: 600
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 5
+    autoRechargeRate: 2
   - type: TypingIndicatorClothing
     proto: CosmicTyping
 
