@@ -1,5 +1,5 @@
 - type: entity
-  id: StellarWindoor
+  id: StellarWindoorGlass
   parent: BaseWindoor
   name: directional glass windoor
   description: A glass service door for installation on tables or countertops.
@@ -58,10 +58,49 @@
     price: 350
 
 - type: entity
-  id: StellarWindoorReinforced
-  parent: StellarWindoor
+  id: StellarWindoorGlassReinforced
+  parent: StellarWindoorGlass
   name: reinforced directional glass windoor
   description: A glass service door for installation on tables or countertops. This one's a bit tougher.
   components:
   - type: Sprite
     sprite: _ST/Tileset/Doors/Windoors/windoor_glass_reinf.rsi
+
+
+# PLASMA
+- type: entity
+  id: StellarWindoorPlasma
+  parent: StellarWindoorGlass
+  name: directional plasma windoor
+  description: A plasma glass service door for installation on tables or countertops.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Doors/Windoors/windoor_plasma.rsi
+
+- type: entity
+  id: StellarWindoorPlasmaReinforced
+  parent: StellarWindoorGlassReinforced
+  name: reinforced directional plasma windoor
+  description: A plasma glass service door for installation on tables or countertops. This one's a bit tougher.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Doors/Windoors/windoor_plasma_reinf.rsi
+
+# URANIUM
+- type: entity
+  id: StellarWindoorUranium
+  parent: StellarWindoorGlass
+  name: directional uranium windoor
+  description: A uranium glass service door for installation on tables or countertops.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Doors/Windoors/windoor_uranium.rsi
+
+- type: entity
+  id: StellarWindoorUraniumReinforced
+  parent: StellarWindoorGlassReinforced
+  name: reinforced directional uranium windoor
+  description: A uranium glass service door for installation on tables or countertops. This one's a bit tougher.
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Doors/Windoors/windoor_uranium_reinf.rsi
