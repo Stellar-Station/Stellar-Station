@@ -119,7 +119,7 @@ namespace Content.Server.Administration.Systems
                     Verb prayerVerb = new();
                     prayerVerb.Text = Loc.GetString("prayer-verbs-subtle-message");
                     prayerVerb.Category = VerbCategory.Admin;
-                    prayerVerb.Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/pray.svg.png"));
+                    prayerVerb.Icon = new SpriteSpecifier.Texture(new("/Textures/_ST/Icons/Verbs/pray.svg.png")); // Stellar - Chaplains to Clerics
                     prayerVerb.Act = () =>
                     {
                         _quickDialog.OpenDialog(player, "Subtle Message", "Message", "Popup Message", (string message, string popupMessage) =>

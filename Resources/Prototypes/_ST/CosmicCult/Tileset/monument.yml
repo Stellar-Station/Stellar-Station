@@ -320,7 +320,6 @@
       components:
       - CosmicCult
       - MindShield
-      - BibleUser
   - type: Physics
     bodyType: Static
   - type: Fixtures

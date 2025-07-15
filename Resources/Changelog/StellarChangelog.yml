@@ -99,3 +99,14 @@
   id: 12
   time: '2025-07-14T06:41:12.0000000+00:00'
   url: https://github.com/Stellar-Station/Stellar-Station/pull/29
+- author: AftrLite
+  changes:
+  - message: 'Flavor/fluff job: Cleric! Comes with a prayer book.'
+    type: Add
+  - message: The chaplain has been airlocked. Permanently.
+    type: Remove
+  - message: References to real-world religions have been erased.
+    type: Remove
+  id: 13
+  time: '2025-07-15T05:50:12.0000000+00:00'
+  url: https://github.com/Stellar-Station/Stellar-Station/pull/33

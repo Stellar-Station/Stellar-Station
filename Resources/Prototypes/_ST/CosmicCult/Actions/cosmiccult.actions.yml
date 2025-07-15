@@ -17,7 +17,6 @@
     blacklist:
       components:
       - CosmicCult
-      - BibleUser
     event: !type:EventCosmicSiphon {}
 
 - type: entity
@@ -40,7 +39,6 @@
     blacklist:
       components:
       - CosmicCult
-      - BibleUser
     event: !type:EventCosmicBlank {}
 
 - type: entity
@@ -113,9 +111,6 @@
     whitelist:
       components:
       - HumanoidAppearance
-    blacklist:
-      components:
-      - BibleUser
     event: !type:EventCosmicLapse {}
 
 - type: entity

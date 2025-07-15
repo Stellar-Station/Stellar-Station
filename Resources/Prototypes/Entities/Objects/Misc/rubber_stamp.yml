@@ -64,13 +64,13 @@
     state: stamp-centcom
 
 - type: entity
-  name: chaplain's rubber stamp
+  name: cleric's rubber stamp # Stellar - Chaplains to Clerics
   parent: RubberStampBase
   id: RubberStampChaplain
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: stamp-component-stamped-name-chaplain
+    stampedName: job-name-cleric # Stellar - Chaplains to Clerics
     stampedColor: "#d70601"
     stampState: "paper_stamp-chaplain"
   - type: Sprite

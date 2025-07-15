@@ -137,9 +137,9 @@
   parent: JobIcon
   id: JobIconChaplain
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
-    state: Chaplain
-  jobName: job-name-chaplain
+    sprite: /Textures/_ST/Icons/job_icons.rsi # Stellar Begin - Chaplains to Clerics
+    state: cleric
+  jobName: job-name-cleric # Stellar End - Chaplains to Clerics
 
 - type: jobIcon
   parent: JobIcon

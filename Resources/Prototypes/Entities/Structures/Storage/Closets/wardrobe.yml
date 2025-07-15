@@ -168,7 +168,7 @@
 - type: entity
   id: WardrobeChapel
   parent: WardrobeBlack
-  name: chaplain's wardrobe
+  name: cleric's wardrobe # Stellar - Chaplains to Clerics
   description: It's a storage unit for Nanotrasen-approved religious attire.
 
 - type: entity

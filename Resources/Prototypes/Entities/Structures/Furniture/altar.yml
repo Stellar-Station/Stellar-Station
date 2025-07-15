@@ -103,29 +103,29 @@
     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
     state: toolbox
 
-- type: entity
-  id: AltarSpaceChristian
-  parent: AltarNanotrasen
-  name: space-Christian altar
-  components:
-  - type: Sprite
-    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
-    layers:
-    - state: space-christian
-    - state: space-christian_lightning
-      shader: unshaded
-  - type: Icon
-    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
-    state: space-christian
-  - type: PointLight
-    radius: 1.5
-    energy: 1
-    color: "#fbceb1"
+# - type: entity # Stellar Begin - Chaplains to Clerics
+#   id: AltarSpaceChristian
+#   parent: AltarNanotrasen
+#   name: space-Christian altar
+#   components:
+#   - type: Sprite
+#     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+#     layers:
+#     - state: space-christian
+#     - state: space-christian_lightning
+#       shader: unshaded
+#   - type: Icon
+#     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+#     state: space-christian
+#   - type: PointLight
+#     radius: 1.5
+#     energy: 1
+#     color: "#fbceb1" # Stellar Begin - Chaplains to Clerics
 
 - type: entity
   id: AltarSatana
   parent: AltarNanotrasen
-  name: satanic altar
+  name: evil altar # Stellar - Chaplains to Clerics
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
