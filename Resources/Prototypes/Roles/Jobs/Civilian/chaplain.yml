@@ -1,6 +1,6 @@
 - type: job
   id: Chaplain
-  name: job-name-chaplain
+  name: job-name-cleric # Stellar - Chaplains to Clerics
   description: job-description-chaplain
   playTimeTracker: JobChaplain
   startingGear: ChaplainGear
@@ -9,10 +9,10 @@
   access:
   - Chapel
   - Maintenance
-  special:
-  - !type:AddComponentSpecial
-    components:
-    - type: BibleUser #Lets them heal with bibles
+  # special: # Stellar Begin - Chaplains to Clerics
+  # - !type:AddComponentSpecial
+  #   components:
+  #   - type: BibleUser #Lets them heal with bibles # Stellar End - Chaplains to Clerics
 
 - type: startingGear
   id: ChaplainGear
@@ -22,7 +22,8 @@
     ears: ClothingHeadsetService
   storage:
     back:
-    - Bible
+    # - Bible # Stellar - Chaplains to Clerics
+    - PrayerBook # Stellar - Chaplains to Clerics
     - RubberStampChaplain
 
 - type: chameleonOutfit

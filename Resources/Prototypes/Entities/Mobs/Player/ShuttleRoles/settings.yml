@@ -396,9 +396,9 @@
   id: VisitorChaplain
   parent: VisitorCivilian
   components:
-    - type: BibleUser
+    # - type: BibleUser # Stellar - Chaplains to Clerics
     - type: GhostRole
-      name: job-name-chaplain
+      name: job-name-cleric # Stellar - Chaplains to Clerics
     - type: Loadout
       prototypes: [ VisitorChaplain, VisitorChaplainAlt ]
       roleLoadout: [ RoleSurvivalStandard ]

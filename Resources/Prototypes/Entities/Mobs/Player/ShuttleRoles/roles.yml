@@ -308,7 +308,7 @@
 
 - type: entity
   id: RandomHumanoidVisitorChaplain
-  name: visiting chaplain ghost role
+  name: visiting cleric ghost role # Stellar - Chaplains to Clerics
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi

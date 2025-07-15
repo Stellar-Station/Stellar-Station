@@ -56,7 +56,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtChaplain
-  name: chaplain's jumpskirt
+  name: cleric's jumpskirt # Stellar - Chaplains to Clerics
   description: It's a black jumpskirt, often worn by religious folk.
   components:
     - type: Sprite

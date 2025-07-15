@@ -1,0 +1,34 @@
+- type: entity
+  name: prayer book
+  description: A tidily-bound book, full of prayers and scripture.
+  parent: BaseStorageItem
+  id: PrayerBook
+  components:
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    damage:
+      types:
+        Blunt: 1
+  - type: Prayable
+  - type: Sprite
+    sprite: _ST/Items/Books/prayerbook.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _ST/Items/Books/prayerbook.rsi
+  - type: Clothing
+    slots:
+    - Belt
+  - type: Storage
+    grid:
+    - 0,0,0,1
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: Tag
+    tags:
+    - Book
+  - type: StealTarget
+    stealGroup: Bible

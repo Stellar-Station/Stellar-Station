@@ -99,7 +99,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatHoodChaplainHood
   categories: [ HideSpawnMenu ]
-  name: chaplain's hood
+  name: cleric's hood # Stellar - Chaplains to Clerics
   description: Maximum piety in this star system.
   components:
   - type: Sprite

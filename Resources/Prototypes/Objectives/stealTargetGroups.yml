@@ -251,9 +251,9 @@
 
 - type: stealTargetGroup
   id: Bible
-  name: steal-target-groups-bible
+  name: steal-target-groups-prayerbook # Stellar - Chaplains to Clerics
   sprite:
-    sprite: Objects/Specific/Chapel/bible.rsi
+    sprite: _ST/Items/Books/prayerbook.rsi
     state: icon
 
 - type: stealTargetGroup

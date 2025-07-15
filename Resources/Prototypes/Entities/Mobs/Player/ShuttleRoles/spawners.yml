@@ -572,7 +572,7 @@
     - RandomHumanoidVisitorBoxer
 
 - type: entity
-  name: visiting chaplain spawner
+  name: visiting cleric spawner # Stellar - Chaplains to Clerics
   id: VisitorChaplainSpawner
   parent: MarkerBase
   components:
