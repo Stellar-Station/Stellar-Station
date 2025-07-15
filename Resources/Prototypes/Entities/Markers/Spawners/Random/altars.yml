@@ -14,7 +14,7 @@
         - AltarChaos
         - AltarDruid
         - AltarToolbox
-        - AltarSpaceChristian
+        # - AltarSpaceChristian  # Stellar - Chaplains to Clerics
         - AltarSatana
         - AltarTechnology
       offset: 0.0
