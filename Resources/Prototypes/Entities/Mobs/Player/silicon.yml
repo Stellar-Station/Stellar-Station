@@ -252,7 +252,7 @@
   - type: BlockMovement
     blockInteraction: false
   - type: SiliconLawProvider
-    laws: Crewsimov
+    laws: NTDefault # Stellar - Crewsimov begone
   - type: SiliconLawBound
   - type: ActionGrant
     actions:

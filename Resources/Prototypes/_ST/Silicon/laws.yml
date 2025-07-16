@@ -1,0 +1,231 @@
+#
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: 2025 Janet Blackquill <uhhadd@gmail.com>
+#
+
+- type: siliconLaw
+  id: StellarNTUnspecialized1
+  order: 1
+  lawString: law-ntunspecialized-1
+
+- type: siliconLaw
+  id: StellarNTUnspecialized2
+  order: 2
+  lawString: law-ntunspecialized-2
+
+- type: siliconLaw
+  id: StellarNTUnspecialized3
+  order: 3
+  lawString: law-ntunspecialized-3
+
+- type: siliconLawset
+  id: StellarNTUnspecialized
+  laws:
+  - StellarNTUnspecialized1
+  - StellarNTUnspecialized2
+  - StellarNTUnspecialized3
+  obeysTo: laws-owner-crew
+
+- type: siliconLaw
+  id: StellarNTMedical1
+  order: 1
+  lawString: law-ntmedical-1
+
+- type: siliconLaw
+  id: StellarNTMedical2
+  order: 2
+  lawString: law-ntmedical-2
+
+- type: siliconLaw
+  id: StellarNTMedical3
+  order: 3
+  lawString: law-ntmedical-3
+
+- type: siliconLaw
+  id: StellarNTMedical4
+  order: 4
+  lawString: law-ntmedical-4
+
+- type: siliconLaw
+  id: StellarNTMedical5
+  order: 5
+  lawString: law-ntmedical-5
+
+- type: siliconLawset
+  id: StellarNTMedical
+  laws:
+  - StellarNTMedical1
+  - StellarNTMedical2
+  - StellarNTMedical3
+  - StellarNTMedical4
+  - StellarNTMedical5
+  obeysTo: laws-owner-crew
+
+- type: siliconLaw
+  id: StellarNTEngineer1
+  order: 1
+  lawString: law-ntengineer-1
+
+- type: siliconLaw
+  id: StellarNTEngineer2
+  order: 2
+  lawString: law-ntengineer-2
+
+- type: siliconLaw
+  id: StellarNTEngineer3
+  order: 3
+  lawString: law-ntengineer-3
+
+- type: siliconLaw
+  id: StellarNTEngineer4
+  order: 4
+  lawString: law-ntengineer-4
+
+- type: siliconLaw
+  id: StellarNTEngineer5
+  order: 5
+  lawString: law-ntengineer-5
+
+- type: siliconLawset
+  id: StellarNTEngineer
+  laws:
+  - StellarNTEngineer1
+  - StellarNTEngineer2
+  - StellarNTEngineer3
+  - StellarNTEngineer4
+  - StellarNTEngineer5
+  obeysTo: laws-owner-crew
+
+- type: siliconLaw
+  id: StellarNTJanitor1
+  order: 1
+  lawString: law-ntjanitor-1
+
+- type: siliconLaw
+  id: StellarNTJanitor2
+  order: 2
+  lawString: law-ntjanitor-2
+
+- type: siliconLaw
+  id: StellarNTJanitor3
+  order: 3
+  lawString: law-ntjanitor-3
+
+- type: siliconLaw
+  id: StellarNTJanitor4
+  order: 4
+  lawString: law-ntjanitor-4
+
+- type: siliconLaw
+  id: StellarNTJanitor5
+  order: 5
+  lawString: law-ntjanitor-5
+
+- type: siliconLawset
+  id: StellarNTJanitor
+  laws:
+  - StellarNTJanitor1
+  - StellarNTJanitor2
+  - StellarNTJanitor3
+  - StellarNTJanitor4
+  - StellarNTJanitor5
+  obeysTo: laws-owner-crew
+
+- type: siliconLaw
+  id: StellarNTResearch1
+  order: 1
+  lawString: law-ntresearch-1
+
+- type: siliconLaw
+  id: StellarNTResearch2
+  order: 2
+  lawString: law-ntresearch-2
+
+- type: siliconLaw
+  id: StellarNTResearch3
+  order: 3
+  lawString: law-ntresearch-3
+
+- type: siliconLaw
+  id: StellarNTResearch4
+  order: 4
+  lawString: law-ntresearch-4
+
+- type: siliconLaw
+  id: StellarNTResearch5
+  order: 5
+  lawString: law-ntresearch-5
+
+- type: siliconLaw
+  id: StellarNTResearch6
+  order: 6
+  lawString: law-ntresearch-6
+
+- type: siliconLawset
+  id: StellarNTResearch
+  laws:
+  - StellarNTResearch1
+  - StellarNTResearch2
+  - StellarNTResearch3
+  - StellarNTResearch4
+  - StellarNTResearch5
+  - StellarNTResearch6
+  obeysTo: laws-owner-crew
+
+- type: siliconLaw
+  id: StellarNTSalvage1
+  order: 1
+  lawString: law-ntsalvage-1
+
+- type: siliconLaw
+  id: StellarNTSalvage2
+  order: 2
+  lawString: law-ntsalvage-2
+
+- type: siliconLaw
+  id: StellarNTSalvage3
+  order: 3
+  lawString: law-ntsalvage-3
+
+- type: siliconLaw
+  id: StellarNTSalvage4
+  order: 4
+  lawString: law-ntsalvage-4
+
+- type: siliconLawset
+  id: StellarNTSalvage
+  laws:
+  - StellarNTSalvage1
+  - StellarNTSalvage2
+  - StellarNTSalvage3
+  - StellarNTSalvage4
+  obeysTo: laws-owner-crew
+
+- type: siliconLaw
+  id: StellarNTService1
+  order: 1
+  lawString: law-ntservice-1
+
+- type: siliconLaw
+  id: StellarNTService2
+  order: 2
+  lawString: law-ntservice-2
+
+- type: siliconLaw
+  id: StellarNTService3
+  order: 3
+  lawString: law-ntservice-3
+
+- type: siliconLaw
+  id: StellarNTService4
+  order: 4
+  lawString: law-ntservice-4
+
+- type: siliconLawset
+  id: StellarNTService
+  laws:
+  - StellarNTService1
+  - StellarNTService2
+  - StellarNTService3
+  - StellarNTService4
+  obeysTo: laws-owner-crew

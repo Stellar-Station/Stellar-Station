@@ -1,6 +1,7 @@
 # Generic borg
 - type: borgType
   id: generic
+  lawset: StellarNTResearch # Stellar - Borg lawsets
 
   # Description
   dummyPrototype: BorgChassisGeneric
@@ -34,6 +35,7 @@
 # Engineering borg
 - type: borgType
   id: engineering
+  lawset: StellarNTEngineer # Stellar - Borg lawsets
 
   # Description
   dummyPrototype: BorgChassisEngineer
@@ -70,6 +72,7 @@
 # Salvage borg
 - type: borgType
   id: mining
+  lawset: StellarNTSalvage # Stellar - Borg lawsets
 
   # Description
   dummyPrototype: BorgChassisMining
@@ -107,6 +110,7 @@
 # Janitor borg
 - type: borgType
   id: janitor
+  lawset: StellarNTJanitor # Stellar - Borg lawsets
 
   # Description
   dummyPrototype: BorgChassisJanitor
@@ -143,6 +147,7 @@
 # Medical borg
 - type: borgType
   id: medical
+  lawset: StellarNTMedical # Stellar - Borg lawsets
 
   # Description
   dummyPrototype: BorgChassisMedical
@@ -193,6 +198,7 @@
 # Service borg
 - type: borgType
   id: service
+  lawset: StellarNTService # Stellar - Borg lawsets
 
   # Description
   dummyPrototype: BorgChassisService

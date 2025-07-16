@@ -170,7 +170,7 @@
   abstract: true
   components:
   - type: SiliconLawProvider
-    laws: Crewsimov
+    laws: NTDefault # Stellar - Crewsimov begone
 
 - type: entity
   id: BaseStationNews
