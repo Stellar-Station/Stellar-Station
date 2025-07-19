@@ -1,0 +1,81 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "LicenseRef-Wallening",
+    "copyright": "By AftrLite",
+    "states": [
+        {
+            "name": "base_grey",
+            "directions": 4
+        },
+        {
+            "name": "base_dark",
+            "directions": 4
+        },
+        {
+            "name": "base_white",
+            "directions": 4
+        },
+        {
+            "name": "emergency_light_off",
+            "directions": 4
+        },
+        {
+            "name": "emergency_light_on",
+            "directions": 4,
+            "delays": [
+                [
+                    0.3,
+                    0.2,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.2
+                ],
+                [
+                    0.3,
+                    0.2,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.2
+                ],
+                [
+                    0.3,
+                    0.2,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.2
+                ],
+                [
+                    0.3,
+                    0.2,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.2
+                ]
+            ]
+        }
+    ]
+}

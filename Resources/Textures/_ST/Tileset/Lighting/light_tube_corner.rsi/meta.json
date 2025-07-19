@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "license": "LicenseRef-Wallening",
+    "copyright": "By AftrLite",
+    "size": {
+    "x": 36,
+    "y": 88
+  },
+  "states": [
+    {
+      "name": "broken",
+      "directions": 4
+    },
+    {
+      "name": "burned",
+      "directions": 4
+    },
+    {
+      "name": "base",
+      "directions": 4
+    },
+    {
+      "name": "empty",
+      "directions": 4
+    },
+	{
+      "name": "glow",
+      "directions": 4
+    }
+  ]
+}

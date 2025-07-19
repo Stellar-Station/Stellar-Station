@@ -22,7 +22,7 @@
     graph: LightFixture
     node: tubeLight
   - type: Sprite
-    sprite: _ST/Tileset/OnWalls/light_tube.rsi # Stellar - Wallening
+    sprite: _ST/Tileset/Lighting/light_tube.rsi # Stellar - Wallening
     drawdepth: Overdoors # Stellar - Wallening
     layers:
     - map: ["enum.PoweredLightLayers.Base"]
@@ -97,7 +97,7 @@
   components:
   - type: Sprite
     drawdepth: Overdoors # Stellar - Wallening
-    sprite: _ST/Tileset/OnWalls/light_tube.rsi # Stellar - Wallening
+    sprite: _ST/Tileset/Lighting/light_tube.rsi # Stellar - Wallening
     state: empty
   - type: PointLight
     enabled: false
