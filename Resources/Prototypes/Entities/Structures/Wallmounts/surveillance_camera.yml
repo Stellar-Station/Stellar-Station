@@ -94,6 +94,8 @@
               collection: MetalBreak
               params:
                 volume: -8
+  - type: Tag # Stellar - we need a tag for mindflayer surveillance camera
+    tags: [SurveillanceCamera]
   placement:
     mode: SnapgridCenter
     snap:
