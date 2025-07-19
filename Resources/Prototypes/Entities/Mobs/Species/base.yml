@@ -214,8 +214,8 @@
   - type: Dropshadow # Begin Stellar - Wallening
     sprite:
       sprite: _ST/Effects/dropshadow.rsi
-      state: shadow-medium
-    offset: 0, -0.5 # End Stellar - Wallening
+      state: shadow-medium-directional
+    offset: 0, -0.062 # End Stellar - Wallening
 
 - type: entity
   save: false

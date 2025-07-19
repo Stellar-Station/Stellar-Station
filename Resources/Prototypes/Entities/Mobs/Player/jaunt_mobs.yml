@@ -27,10 +27,10 @@
   suffix: Wizard
   components:
   - type: Sprite
-    sprite: Mobs/Ghosts/ghost_human.rsi
+    sprite: _ST/Mobs/Playable/ghost.rsi # Stellar
     color: "#60f7eb"
     layers:
-    - state: animated
+    - state: full # Stellar
       shader: unshaded
     noRot: true
     overrideContainerOcclusion: true

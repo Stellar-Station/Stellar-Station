@@ -11,6 +11,10 @@
             "name": "shadow-medium"
         },
         {
+            "name": "shadow-medium-directional",
+            "directions": 4
+        },
+        {
             "name": "shadow-large"
         },
         {
