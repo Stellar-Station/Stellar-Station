@@ -40,10 +40,10 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Mobs/Ghosts/ghost_human.rsi
+    sprite: _ST/Mobs/Playable/ghost.rsi # Stellar
     color: "#fff8"
     layers:
-    - state: animated
+    - state: animated # Stellar
       shader: unshaded
   - type: ContentEye
     maxZoom: 1.44,1.44
@@ -124,7 +124,7 @@
   description: Toggle the visibility of other ghosts.
   components:
   - type: Action
-    icon: { sprite: Mobs/Ghosts/ghost_human.rsi, state: icon }
+    icon: { sprite: _ST/Mobs/Playable/ghost.rsi, state: icon } # Stellar
     clientExclusive: true
   - type: InstantAction
     event: !type:ToggleGhostsActionEvent
