@@ -579,7 +579,7 @@
   id: IonStormLawsets
   weights:
     # its crewsimov by default dont be lame
-    Crewsimov: 0.25
+    # Crewsimov: 0.25 # Stellar - Kill crewsimov with hammers
     Corporate: 1
     NTDefault: 1
     CommandmentsLawset: 1

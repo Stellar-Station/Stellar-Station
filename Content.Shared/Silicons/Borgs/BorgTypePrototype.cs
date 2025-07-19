@@ -151,4 +151,9 @@ public sealed partial class BorgTypePrototype : IPrototype
     /// </summary>
     [DataField]
     public SoundSpecifier FootstepCollection { get; set; } = new SoundCollectionSpecifier(DefaultFootsteps);
+
+    // Begin Stellar - Borg lawsets
+    [DataField]
+    public ProtoId<Content.Shared.Silicons.Laws.SiliconLawsetPrototype>? Lawset;
+    // End Stellar
 }

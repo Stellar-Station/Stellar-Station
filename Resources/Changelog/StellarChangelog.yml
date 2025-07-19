@@ -117,3 +117,12 @@
   id: 14
   time: '2025-07-15T06:31:17.0000000+00:00'
   url: https://github.com/Stellar-Station/Stellar-Station/pull/34
+- author: sowelipililimute
+  changes:
+  - message: Borgs now have job-specific lawsets
+    type: Add
+  - message: Crewsimov is gone
+    type: Remove
+  id: 15
+  time: '2025-07-16T21:31:32.0000000+00:00'
+  url: https://github.com/Stellar-Station/Stellar-Station/pull/35

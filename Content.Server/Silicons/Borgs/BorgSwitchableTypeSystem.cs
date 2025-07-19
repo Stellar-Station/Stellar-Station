@@ -15,6 +15,7 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
 {
     [Dependency] private readonly BorgSystem _borgSystem = default!;
     [Dependency] private readonly ServerInventorySystem _inventorySystem = default!;
+    [Dependency] private readonly Content.Server.Silicons.Laws.SiliconLawSystem _siliconLaw = default!; // Stellar - Borg type laws
 
     protected override void SelectBorgModule(Entity<BorgSwitchableTypeComponent> ent, ProtoId<BorgTypePrototype> borgType)
     {
@@ -76,6 +77,13 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
         {
             _inventorySystem.SetTemplateId((ent.Owner, inventory), prototype.InventoryTemplateId);
         }
+
+        // Begin Stellar - Borg type lawsets
+        if (prototype.Lawset is { } lawset)
+        {
+            _siliconLaw.SetLaws(_siliconLaw.GetLawset(lawset).Laws, ent);
+        }
+        // End Stellar
 
         base.SelectBorgModule(ent, borgType);
     }
